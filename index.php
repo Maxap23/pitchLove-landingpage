@@ -1,4 +1,6 @@
-<?php include 'inc/subscribe.php'; ?>
+<?php
+require __DIR__.'inc/subscribe.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,42 +33,43 @@
 		<div class="container">
 			
             <div class="row">
-                <div class="col-md-3">
-                    <div class="logo"> <a href="index.php#"><img src="images/logo.png" alt="logo" height="250"></a>
+                <div class="col-md-2">
+                    <div class="logo"> <a href="index.php#"><img src="images/logo.png" alt="logo" height="200"></a>
 			         </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <h1 class="left"><strong>pitchLove</strong></h1>
                     <h3 class="left">The 30 sec spark to make your idea a reality!</h3>
                 </div>
-                <div class="col-md-6">
-                    <!--Dream deferred block-->
+                <div class="col-md-5 col-md-offset-1">
+                    <br>
+                    <h4 class='words mywords' data-type-words="What happens to a dream deferred?, Does it dry up like a raisin in the sun?, Or fester like a sore-- And then run?, Does it stink like rotten meat?, Or crust and sugar over-- like a syrupy sweet?, Maybe it just sags like a heavy load., Or does it explode?">A Dream Deferred</h4>
                 </div>
             
             </div>
             
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4 col-md-offset-1">
                     <div class="mobile"> <a href="index.php#"><img src="images/signin-image.png" alt="logo" height="300"></a>
 			         </div>
                 </div>
-                <div class="col-md-6 left">
-                    <p>Why defer it, make it a reality.</p>
-                    <p>Easily market & do crowd market testing w/ pitchLove.</p>
-                    <p>Get the data you need to launch your idea quickly and easily.</p>
-                    <p>It's as easy as: <br><strong>1)Sign Up --> <br>2)Fill out a profile + create you pitchTest --> <br>3)Get expert, investor, and community feedback. --> <br>4)Build successful businesses!!!!</strong></p>
+                <div class="col-md-5 col-md-offset-1 info left">
+                    <h4>Why defer your dream, make it a reality.</h4>
+                    <h4>Easily market & do crowd market testing w/ pitchLove.</h4>
+                    <h4>Get the info you need to whether your idea is worth your $$$ & time.</h4>
+                    <h4>It's as easy as: <br><strong>1) Sign Up --> <br>2) Fill out a profile + create you pitchTest --> <br>3) Get expert, investor, and community feedback. --> <br>4) Build a profitable business!!!</strong></h4>
                 </div>
             </div>
  
 			<div class="row">
 				<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-					<form class="form-horizontal" role="form" action="" name="subscribeForm" id="subscribeForm" method="POST">
+					<form class="form-horizontal" role="form" action="inc/subscribe.php" name="subscribeForm" id="subscribeForm" method="POST">
 						<div class="form-group">
 							<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
 								<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
 							</div>
 							<div class="col-md-5 col-sm-4">
-								<button type="submit" class="btn btn-success btn-lg">GET EARLY ACCESS</button>
+								<button type="submit" class="btn cta btn-lg">GET EARLY ACCESS</button>
 							</div>
 						</div>
 					</form>
@@ -152,7 +155,7 @@
  
 				<div class="row">
 					<div class="col-md-12 breath text-center"> 
-						<a href="index.php#top" class="btn btn-success btn-lg gototop">GET EARLY ACCESS</a> 
+						<a href="index.php#top" class="btn cta btn-lg gototop">GET EARLY ACCESS</a> 
 					</div>
 				</div>
 			</div><! --/container -->
@@ -174,10 +177,7 @@
 <script src="js/easing.js"></script>
 <script src="js/nicescroll.js"></script>
  
- 
 <script>
-
-
  $(function() {
     $('.scrollto, .gototop').bind('click',function(event){
 		 var $anchor = $(this);
@@ -187,8 +187,37 @@
      event.preventDefault();
       });
   });
+</script>
         
-
+<script>
+  var vid;
+  var oReq = new XMLHttpRequest(); //New request object
+    oReq.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            response = JSON.parse(this.responseText);
+            //vid = pitch[0].vid;
+            console.log(response);
+            $("#result").append("<p>" + response + "</p>");
+            //alert(this.responseText);
+        }
+    };
+    oReq.open("GET", "inc/subscribe.php", true);
+    oReq.send();
+        
+   /* function placePitch(name,tag) {
+            $("#companyname").html("<h3>" + name + "</h3>");
+            $("#highconceptpitch").html("<p>" + tag + "</p>");
+    }  */        
+</script>
+        
+<script src='js/wordTypeErase.js'></script>
+        
+<script>
+    $('.mywords').wordTypeErase({
+        delayOfStart: 1800,
+        naturalTypingSpeed: true,
+        letterSpeed: 120
+    }); 
 </script>
         
 <script>
