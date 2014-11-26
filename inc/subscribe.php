@@ -3,12 +3,11 @@ ini_set('display_errors',1);
 error_reporting(E_ALL);
 require __DIR__.'/dbconfig.php';
 require __DIR__.'/newSubscriber.php';
-require __DIR__./'redirect.php';
 
-echo 'test';
+//echo 'test';
 $code = 'n';
-$url = 'http://localhost:8888/pitchLove-landingpage/index.html';
 //echo($_POST['email']);
+
 if(isset($_POST['email'])){
  $email = $conn->quote($_POST['email']);
 $sql = "INSERT INTO subscribers (email) VALUES (:email)";
@@ -20,35 +19,32 @@ $q->execute(array($email));
         try {
           $stmt = $conn->prepare($sql);
           $stmt->execute(array(':email'=>$email));
+            if($stmt->rowcount()>0) {
+                $useremail = $email;
+                if(newSubscriber($useremail)) {
+                    $code = 'y';
+                } else {
+                    $code = 'd';
+                }
+            } else {
+                $code = 'i';        
+            }
         //echo "Successfully inserted".$stmt->rowcount();
         } catch(PDOException $e) {
           trigger_error('Wrong SQL: '.$sql.' Error: '. $e->getMessage(), E_USER_ERROR);
         }
-        if($stmt->rowcount()) {
-            newSubscriber($email);
-            $code = 'y';
-            $code = json_encode($code);
-            echo $code;
-        } else {
-            $code = 'i';
-            $code = json_encode($code);
-            echo $code;
-        }
+        
         // Close connection
         $conn = null;
-        redirect($url);
+        header('Location: ../index.php?subscribe='.$code);
     } else {
         $code = 'a';
-        $code = json_encode($code);
-        echo $code;
         $conn = null;
-        redirect($url);
+        header('Location: ../index.php?subscribe='.$code);
     }  
 } else {
-    echo 'b';
     $code = 'd';
-    $code = json_encode($code);
-    echo $code;
-    redirect($url);
+    $conn = null;
+    header('Location: ../index.php?subscribe='.$code);
 } 
 ?>

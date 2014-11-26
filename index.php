@@ -1,5 +1,5 @@
 <?php
-require __DIR__.'inc/subscribe.php';
+$value = $_GET["subscribe"]; 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,7 +8,7 @@ require __DIR__.'inc/subscribe.php';
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
-	<title>pitchLove</title>
+	<title>pitchLove | The 30 sec spark to make your idea a reality!</title>
 	 
 	<link href="css/bootstrap.css" rel="stylesheet">
 	 
@@ -55,8 +55,8 @@ require __DIR__.'inc/subscribe.php';
                 </div>
                 <div class="col-md-5 col-md-offset-1 info left">
                     <h4>Why defer your dream, make it a reality.</h4>
-                    <h4>Easily market & do crowd market testing w/ pitchLove.</h4>
-                    <h4>Get the info you need to whether your idea is worth your $$$ & time.</h4>
+                    <h4>Just upload a pitch for your idea or innovation to easily market & do crowd testing w/ pitchLove.</h4>
+                    <h4>The responses to your pitch will provide the info you need to whether your idea is worth your $$$ & time.</h4>
                     <h4>It's as easy as: <br><strong>1) Sign Up --> <br>2) Fill out a profile + create you pitchTest --> <br>3) Get expert, investor, and community feedback. --> <br>4) Build a profitable business!!!</strong></h4>
                 </div>
             </div>
@@ -69,12 +69,39 @@ require __DIR__.'inc/subscribe.php';
 								<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
 							</div>
 							<div class="col-md-5 col-sm-4">
-								<button type="submit" class="btn cta btn-lg">GET EARLY ACCESS</button>
+								<button type="submit" name="submit" class="btn cta btn-lg">GET EARLY ACCESS</button>
 							</div>
 						</div>
 					</form>
-					<span id="result" class="alertMsg"></span> </div>
+					 </div>
 				</div>
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-md-offset-2">
+                    <span id="result" class="alert alert-warning alert-dismissible" role="alert">
+                    <?php
+if(isset($value) && ($value=='y')) {
+    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
+  echo("<strong>Form successfully submitted. Thanks, email info@e2.is if you have any questions. You will receive more information shortly.</strong>");
+} elseif(isset($value) && ($value=='i')) {
+    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
+  echo("<strong>Form successfully submitted. Thanks, email info@e2.is if you have any questions.</strong>");
+} elseif(isset($value) && ($value=='a')) {
+    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
+  echo("<strong>Form successfully submitted, but it seems you are already on the list. Email info@e2.is if you would like to check in.</strong>");
+} elseif(isset($value) && ($value=='d')) {
+    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
+  echo("<strong>Sorry, there seems like there was an error. Email info@e2.is to figure out the data issue.</strong>");
+} 
+elseif(!(isset($value))) {
+   
+} else {
+    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
+    echo("<p>Sorry, there was an error submitting the form. Email info@e2.is for more information.</p>");
+}
+?>
+                    </span>
+                    </div>
+            </div>
  
 				<a href="index.php#explore" class="scrollto">
 				<p>SCROLL DOWN TO EXPLORE</p>
@@ -108,14 +135,14 @@ require __DIR__.'inc/subscribe.php';
 					<img src="images/filmshowcase.png" alt="showcase">
 					<div class="caption">
 						<h3>Showcase Innovations</h3>
-						<p>Show off how great your new business idea or innovation is and get loyal customers immediately.</p>
+						<p>Show off how great your new business idea or innovation is with your amazing pitch and get loyal customers immediately.</p>
 					</div>
 				</div><! --/thumbnail -->
 			</div><! --/col-sm-6-->
  
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail"> 
-					<img src="images/service_02.png" alt="analytics-icon">
+					<img src="images/understanding.png" alt="understanding">
 					<div class="caption">
 						<h3>Understand Your Customers</h3>
 						<p>Know exactly who is in your target market and what their needs are in order to sell more efficiently.</p>
@@ -125,20 +152,20 @@ require __DIR__.'inc/subscribe.php';
  
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail"> 
-					<img src="images/service_03.png" alt="analytics-icon">
+					<img src="images/experiment.png" alt="experiments">
 					<div class="caption">
 						<h3>Test the Opportunity</h3>
-						<p>Does anyone even have this problem? Find out who and if they'll actually pay for your solution.</p>
+						<p>Does anyone even have this problem? Find out who and if they'll actually pay for your solution. The users that respons to your pitch will tell you.</p>
 					</div>
 				</div><! --/thumbnail -->
 			</div><! --/col-sm-6-->
  
 			<div class="col-sm-6 col-md-3">
 				<div class="thumbnail"> 
-					<img src="images/service_04.png" alt="analytics-icon">
+					<img src="images/help.png" alt="help">
 					<div class="caption">
 						<h3>Get Expert Help</h3>
-						<p>Expert entrepreneurs, marketers, salespeople, technologists, investors, and more provide you assistance to build your business better.</p>
+						<p>Expert entrepreneurs, marketers, salespeople, technologists, investors, and more view your pitch and provide you with feedback, areas for improvement, and provide you assistance to build your business better.</p>
 					</div>
 				</div><! --/thumbnail -->
 			</div><! --/col-sm-6-->
@@ -170,8 +197,6 @@ require __DIR__.'inc/subscribe.php';
 		</div><! --/container -->
  
  
- 
- 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/easing.js"></script>
@@ -187,27 +212,6 @@ require __DIR__.'inc/subscribe.php';
      event.preventDefault();
       });
   });
-</script>
-        
-<script>
-  var vid;
-  var oReq = new XMLHttpRequest(); //New request object
-    oReq.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            response = JSON.parse(this.responseText);
-            //vid = pitch[0].vid;
-            console.log(response);
-            $("#result").append("<p>" + response + "</p>");
-            //alert(this.responseText);
-        }
-    };
-    oReq.open("GET", "inc/subscribe.php", true);
-    oReq.send();
-        
-   /* function placePitch(name,tag) {
-            $("#companyname").html("<h3>" + name + "</h3>");
-            $("#highconceptpitch").html("<p>" + tag + "</p>");
-    }  */        
 </script>
         
 <script src='js/wordTypeErase.js'></script>
