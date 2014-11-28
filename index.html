@@ -1,6 +1,3 @@
-<?php
-$value = $_GET["subscribe"]; 
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +31,7 @@ $value = $_GET["subscribe"];
 			
             <div class="row">
                 <div class="col-md-2">
-                    <div class="logo"> <a href="index.php#"><img src="images/logo.png" alt="logo" height="200"></a>
+                    <div class="logo"> <a href="index.html#"><img src="images/logo.png" alt="logo" height="200"></a>
 			         </div>
                 </div>
                 <div class="col-md-3">
@@ -43,30 +40,63 @@ $value = $_GET["subscribe"];
                 </div>
                 <div class="col-md-5 col-md-offset-1">
                     <br>
+                    <br>
                     <h4 class='words mywords' data-type-words="What happens to a dream deferred?, Does it dry up like a raisin in the sun?, Or fester like a sore-- And then run?, Does it stink like rotten meat?, Or crust and sugar over-- like a syrupy sweet?, Maybe it just sags like a heavy load., Or does it explode?">A Dream Deferred</h4>
                 </div>
-            
             </div>
             
-            <div class="row">
+            <div class="row block">
                 <div class="col-md-4 col-md-offset-1">
-                    <div class="mobile"> <a href="index.php#"><img src="images/signin-image.png" alt="logo" height="300"></a>
+                    <div class="mobile"> <a href="index.html#"><img src="images/signin-image.png" alt="logo" height="300"></a>
 			         </div>
                 </div>
                 <div class="col-md-5 col-md-offset-1 info left">
-                    <h4>Why defer your dream, make it a reality.</h4>
-                    <h4>Just upload a pitch for your idea or innovation to easily market & do crowd testing w/ pitchLove.</h4>
-                    <h4>The responses to your pitch will provide the info you need to whether your idea is worth your $$$ & time.</h4>
-                    <h4>It's as easy as: <br><strong>1) Sign Up --> <br>2) Fill out a profile + create you pitchTest --> <br>3) Get expert, investor, and community feedback. --> <br>4) Build a profitable business!!!</strong></h4>
+                    <nav>
+                        <ul>
+                            <li><a class="izquierda" data-section="reveiwer" href="#">Reviewers</a></li>
+                            <li><a class="active derecha" data-section="business" href="#">Innovators</a></li>
+                        </ul>
+                    </nav>
+                    <div id="business">
+                        <section class="active derecha">
+                            <h4>Why defer your dream, make it a reality.</h4>
+                            <h4>Just upload a pitch for your idea or innovation to easily market & do crowd testing w/ pitchLove.</h4>
+                            <h4>The responses to your pitch will provide the info you need to whether your idea is worth your $$$ & time.</h4>
+                            <h4>It's as easy as:
+                                <ol>
+                                    <strong><li>Sign Up</li>
+                                    <li>Fill out a profile + create you pitchTest</li>
+                                    <li>Get expert, investor, and community feedback</li> 
+                                    <li>Build a profitable business!!!</li></strong>
+                                </ol>
+                            </h4>
+                        </section>
+                    </div>
+                    <div id="reviewer">
+                        <section class="izquierda">
+                            <h4>View curated lists that match your interests of innovations from innovators, and businesses from startups to large corporations.</h4>
+                            <h4>Get early access, benefits, and even $$$ to new ideas, products, services, offerings, and initiatives.</h4>
+                                <h4>It's as easy as:
+                                <ol>
+                                    <strong><li>Sign Up</li>
+                                    <li>Fill out a profile</li>
+                                    <li>Provide quick & helpful feedback</li> 
+                                    <li>Get paid!!!</li></strong>
+                                </ol>
+                            </h4>
+                        </section>
+                    </div>
                 </div>
             </div>
  
 			<div class="row">
 				<div class="col-md-6 col-sm-12 col-md-offset-3 subscribe">
-					<form class="form-horizontal" role="form" action="inc/subscribe.php" name="subscribeForm" id="subscribeForm" method="POST">
+                    <form class="form-horizontal" role="form" name="subscribeForm" id="subscribeForm" action="http://us9.list-manage.com/subscribe/post" method="POST">
+<input type="hidden" name="u" value="b600c45ad15be7a2768e4b48f">
+<input type="hidden" name="id" value="c4543fa3e3">
 						<div class="form-group">
 							<div class="col-md-7 col-sm-6 col-sm-offset-1 col-md-offset-0">
-								<input class="form-control input-lg" name="email" type="email" id="address" placeholder="Enter your email" data-validate="validate(required, email)" required="required">
+                                <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required="required" value="">
 							</div>
 							<div class="col-md-5 col-sm-4">
 								<button type="submit" name="submit" class="btn cta btn-lg">GET EARLY ACCESS</button>
@@ -77,33 +107,12 @@ $value = $_GET["subscribe"];
 				</div>
             <div class="row">
                 <div class="col-md-8 col-sm-12 col-md-offset-2">
-                    <span id="result" class="alert alert-warning alert-dismissible" role="alert">
-                    <?php
-if(isset($value) && ($value=='y')) {
-    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
-  echo("<strong>Form successfully submitted. Thanks, email info@e2.is if you have any questions. You will receive more information shortly.</strong>");
-} elseif(isset($value) && ($value=='i')) {
-    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
-  echo("<strong>Form successfully submitted. Thanks, email info@e2.is if you have any questions.</strong>");
-} elseif(isset($value) && ($value=='a')) {
-    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
-  echo("<strong>Form successfully submitted, but it seems you are already on the list. Email info@e2.is if you would like to check in.</strong>");
-} elseif(isset($value) && ($value=='d')) {
-    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
-  echo("<strong>Sorry, there seems like there was an error. Email info@e2.is to figure out the data issue.</strong>");
-} 
-elseif(!(isset($value))) {
-   
-} else {
-    echo("<button type=\"button\" class=\"close btn-warning\" data-dismiss=\"alert\" aria-hidden=\"true\">&times;</button>");
-    echo("<p>Sorry, there was an error submitting the form. Email info@e2.is for more information.</p>");
-}
-?>
+                    <span id="result" class="alertMsg">
                     </span>
                     </div>
             </div>
  
-				<a href="index.php#explore" class="scrollto">
+				<a href="index.html#explore" class="scrollto">
 				<p>SCROLL DOWN TO EXPLORE</p>
 				<p class="scrollto--arrow"><img src="images/scroll_down.png" alt="scroll down arrow"></p>
 				</a>
@@ -182,7 +191,7 @@ elseif(!(isset($value))) {
  
 				<div class="row">
 					<div class="col-md-12 breath text-center"> 
-						<a href="index.php#top" class="btn cta btn-lg gototop">GET EARLY ACCESS</a> 
+						<a href="index.html#top" class="btn cta btn-lg gototop">GET EARLY ACCESS</a> 
 					</div>
 				</div>
 			</div><! --/container -->
@@ -206,12 +215,23 @@ elseif(!(isset($value))) {
  $(function() {
     $('.scrollto, .gototop').bind('click',function(event){
 		 var $anchor = $(this);
-		 $('php, body').stop().animate({
+		 $('html, body').stop().animate({
          scrollTop: $($anchor.attr('href')).offset().top
           }, 1500,'easeInOutExpo');
      event.preventDefault();
       });
   });
+</script>
+        
+<script>
+    $("a[class=derecha]").click(function(){
+        $(".derecha").toggleClass("active");
+        $(".izquierda").toggleClass("active");
+    });   
+    $("a[class=izquierda]").click(function(){
+        $(".izquierda").toggleClass("active");
+        $(".derecha").toggleClass("active");
+    });   
 </script>
         
 <script src='js/wordTypeErase.js'></script>
