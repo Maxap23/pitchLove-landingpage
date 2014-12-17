@@ -1,189 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
 
     <title>pitchLove | Spark Your Idea to Reality</title>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Exo+2">
 
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
 
-    <!-- Custom CSS -->
-    <link href="css/main.css" rel="stylesheet">
+    <script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/Chart.js"></script>
+	<script src="assets/js/modernizr.custom.js"></script>
+      <script type="text/javascript">var switchTo5x=true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript" src="http://s.sharethis.com/loader.js"></script>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
     <![endif]-->
+  </head>
 
-</head>
 
-<body>
-
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+   <div id="h-top-bg">
+	<div class="container">
+    	<div class="h-left col-sm-6 col-xs-12">
+        	<div id="llogo"><a href="#"><img src="assets/img/Pitchlove_logo_small.png" alt="Logo" /></a></div>
+        </div><!--end h-left -->
+        <div class="h-right col-sm-6 col-xs-10 col-xs-offset-2"><a href="#first-invite" class="m-btn">Request an Invite</a></div><!--end h-right -->
     <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top navbar-right" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img src="img/Pitchlove_logo_small.png" alt="pitchLove logo" height="60"></a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#platform">Our Platform</a>
-                    </li>
-                    <li>
-                        <a href="#you">You</a>
-                    </li>
-                    <li>
-                        <a href="#protect">Idea Protection</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
-
+	<!-- Menu -->
+	<nav class="menu" id="theMenu">
+		<div class="menu-wrap">
+			<h1 class="logo"></h1>
+			<i class="icon-remove menu-close"></i>
+            <a href="#" class="smoothScroll">Home</a>
+			<a href="#about" class="smoothScroll">About</a>
+			<a href="#platform" class="smoothScroll">Our Platform</a>
+			<a href="#you2" class="smoothScroll">You</a>
+			<a href="#protect" class="smoothScroll">Idea Protection</a>
+<!--			<a href="#contact" class="smoothScroll">Contact</a>
+			<a href="#"><i class="icon-facebook"></i></a>
+			<a href="#"><i class="icon-twitter"></i></a>
+			<a href="#"><i class="icon-dribbble"></i></a>
+			<a href="#"><i class="icon-envelope"></i></a>
+-->		</div>
+		
+		<!-- Menu button -->
+		<div id="menuToggle"><span></span></div>
+	</nav>
+    </div><!-- end h-top-bg -->
+	</div><!-- end top container -->
     <!-- Full Width Image Header -->
     <header>
+    
         <div class="headline header-image" id="top">
-            <img src="img/Pitchlove_Header.png" alt="colorful, checkered header">
-            <div class="container space">
-                <h2>Everyone wants to be the <strong>ARCHITECT</strong> of their <strong>DREAMS</strong>.</h2>
+            <img class="img-responsive" src="assets/img/Pitchlove_Header.png" alt="colorful, checkered header">
+            <div id="s-text">
+            	 <h2>Everyone wants to be the <strong>ARCHITECT</strong> of their <strong>DREAMS</strong>.</h2>
                 <h3>Did you know you dreams are only a <span><strong class="highlight">SPARK</strong></span> away from becoming reality.</h3>
-            </div>
+            </div><!-- end s-text -->
         </div>
+       <div class="int-bg">
         <div class="container space" id="main-cta">
             <div class="row text-center" >
-                <h1 class="highlight bigger maincta">Introducing pitchLove</h1>
+                <h1 class="highlight bigger maincta pit">Introducing <strong>pitchLove</strong></h1>
                 <h2 class="highlight maincta"><em>Spark Your Idea to Reality</em></h2>
-                <img class="maincta" src="img/Pitchlove_Profile_Macbook.png" alt="Responsive pitchLove Mockup">
+                <img class="maincta" src="assets/img/Pitchlove_Profile_Macbook.png" alt="Responsive pitchLove Mockup">
             </div>
-            <div class="row invite">
+          </div>
+          </div> 
+          <div class="in-bg">
+          <div class="container"> 
+            <div class="row invite" id="first-invite">
                 <div class="col-md-12">
-                    <h3 class="highlight text-center">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
+                    <h3 class="highlight text-center wan">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
                 </div>
-                    <div class="col-md-12 col-sm-12 subscribe">
+                    <div class="col-md-12 col-sm-12 subscribe form-left">
                         <form class="form-horizontal" role="form" name="subscribeForm" id="subscribeForm" action="http://us9.list-manage.com/subscribe/post" method="POST">
     <input type="hidden" name="u" value="b600c45ad15be7a2768e4b48f">
     <input type="hidden" name="id" value="c4543fa3e3">
                             <div class="form-group">
                                 <div class="col-md-5 col-sm-6 col-sm-offset-1 col-md-offset-2">
-                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required="required" value="">
+                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
                                 </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <button type="submit" name="submit" class="btn cta btn-lg">REQUEST AN INVITE</button>
+                                <div class="col-md-4 col-sm-4 submission">
+                                    <button type="submit" name="submit" class="btn cta btn-lg m-btn">REQUEST AN INVITE</button>
                                  </div>
                              </div>
                      </form>
 				</div>
             </div>
         </div>
+        </div></div>
+       </div><!-- end container --> 
+       
     </header>
 
     <!-- Page Content -->
     
-    <section id="about">
-        <div class="container">
+    <section id="about" class="ab-bg">
+        <div class="container" id="howdo">
             <div class="row">
-                <h1 class="sectionheader text-center space">How does pitchLove fit into my dream?</h1>
+                <h1 class="sectionheader text-center space howd">How does pitchLove fit into my dream?</h1>
             </div>
-        </div>
-        <div class="container text-center space">
-            <div class="row">
+        
+        <div class="text-center space">
+            <div class="row" id="fea">
                 <div class="col-sm-4 bar">
-                    <img src="img/1.png" alt="1">
-                    <h3><strong>CREATE A PITCH</strong></h3>
+                    <img src="assets/img/1.png" alt="1">
+                    <h3 class="whit"><strong>CREATE A PITCH</strong></h3>
                     <br>
                 </div>
                 <div class="col-sm-4 bar">
-                    <img src="img/2.png" alt="2">
-                    <h3><strong>GET FEEDBACK</strong></h3>
+                    <img src="assets/img/2.png" alt="2">
+                    <h3 class="whit"><strong>GET FEEDBACK</strong></h3>
                     <br>
                 </div>
                 <div class="col-sm-4">
-                    <img src="img/3.png" alt="3">
-                    <h3><strong>BUILD A GREAT BUSINESS</strong></h3>
+                    <img src="assets/img/3.png" alt="3">
+                    <h3 class="whit"><strong>BUILD A GREAT BUSINESS</strong></h3>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <h3>pitchLove provides the resources to pitch your idea to prospective customers, test and evaluate customer interest, garner feedback from a dedicated community that provides assistance in determining whether to move forward with your initial idea, refine, or scrap your idea altogether. </h3>
+                <div class="col-md-12" id="pitc">
+                    <h3 class="whit">pitchLove provides the resources to pitch your idea to prospective customers, test and evaluate customer interest, garner feedback from a dedicated community that provides assistance in determining whether to move forward with your initial idea, refine, or scrap your idea altogether. </h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
+            <div class="row hrr">
+                <div class="offset-2">
                     <hr>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Our process allows you to save time, money and heartache on the onset, yet pitchLove aims to maximize the potential of your idea in the hopes that our collective investment in your idea will lead to the creation of a viable and sustainable business.</h3>
+                    <h3 class="whit">Our process allows you to save time, money and heartache on the onset, yet pitchLove aims to maximize the potential of your idea in the hopes that our collective investment in your idea will lead to the creation of a viable and sustainable business.</h3>
                 </div>
             </div>
         </div>
     </section>
     
-    <section id="platform">
+    <section id="platform" class="plat-bg">
         <div class="container">
             <div class="row">
-                <h1 class="sectionheader text-center">Our Platform</h1>
+                <h1 class="sectionheader text-center sss">Our Platform</h1>
+                <h2 class="sectionheader text-center bgh highlight">INCLUDES EXPERTS AND INVESTORS THAT HELP TO PROVIDE YOU WITH</h2>
             </div>
         </div>
         <div class="container text-center space">
-            <div class="row text-center">
-                <div class="col-md-2 col-md-offset-1">
-                    <img src="img/Training.png" alt="Training">
+            <div class="row text-center tgf">
+                <div class="col-sm-2 col-sm-offset-1 ourplatform1">
+                    <img src="assets/img/Recruiting.png" alt="Recruiting" class="img-responsive">
+                    <h3 class="edge"><strong>RECRUITING</strong></h3>
+                </div>
+                <div class="col-sm-2 ourplatform2">
+                    <img src="assets/img/Training.png" alt="Training" class="img-responsive">
                     <h3><strong>TRAINING</strong></h3>
                 </div>
-                <div class="col-md-2">
-                    <img src="img/Recruiting.png" alt="Recruiting">
-                    <h3><strong>RECRUITING</strong></h3>
-                </div>
-                <div class="col-md-2">
-                    <img src="img/Insight.png" alt="Insight">
+                <div class="col-sm-2">
+                    <img src="assets/img/Insight.png" alt="Insight" class="img-responsive">
                     <h3><strong>INSIGHT</strong></h3>
                 </div>
-                <div class="col-md-2">
-                    <img src="img/Funding.png" alt="Access to funding">
-                    <h3><strong>ACCESS TO FUNDING</strong></h3>
+                <div class="col-sm-2">
+                    <img src="assets/img/Funding.png" alt="Access to funding" class="img-responsive">
+                    <h3 class= "edge"><strong>FUNDING</strong></h3>
                 </div>
-                <div class="col-md-2">
-                    <img src="img/Mentoring.png" alt="Mentoring">
-                    <h3><strong>MENTORING</strong></h3>
+                <div class="col-sm-2 ourplatform5">
+                    <img src="assets/img/Mentoring.png" alt="Mentoring" class="img-responsive">
+                    <h3 class="edge"><strong>MENTORING</strong></h3>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
-                    <hr class="highlight">
+            <div class="row hrr">
+                <div class="offset-2">
+                    <hr>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                <h1 class="highlight text-center">To ignite the <strong class="dark">SPARK</strong> that’s blazing behind the your dreams and countless others.</h1>
+                <h1 class="highlight text-center" id="spa">To ignite the <strong class="dark">SPARK</strong> that’s blazing <br/>behind your dreams and<br/> the dreams of countless others.</h1>
                 </div>
                 <div class="col-md-1"></div>
             </div>
@@ -191,174 +201,187 @@
     </section>
     
      <section id="entrepreneurship">
-        <div class="container">
-            <div class="row">
-                <h1 class="sectionheader text-center">A Glance at Entrepreneurship in America</h1>
+        <div class="container" id="wor">
+            <div class="row" id="ent-bg">
+                <h1 class="sectionheader text-center">Entrepreneurship in America</h1>
             </div>
-        </div>
-        <div class="container space">
+        
+        <div class="space">
             <div class="row">
-                <div class="col-md-12">
-                    <h3><span class="highlight">Entrepreneurship is on the decline in America. </span>While we may be the leaders of venture capitalism in the world, homegrown startups and emerging small businesses play only a bit part in America’s economy and on the world stage in comparison other industrialized countries like in Sweden, Brazil, Italy, Spain, and Israel. </h3>
+                <div class="col-md-12 tgf">
+                    <h3><span class="highlight">Entrepreneurship is on the decline in America. </span>While we may be the leaders of venture capitalism in the world, homegrown startups and emerging small businesses play only a bit part in America’s economy and on the world stage in comparison other industrialized countries like in Sweden, Brazil, Italy, Spain, and Israel. <br/></h3>
                 </div>
             </div>
-             <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
+             <div class="row tgf">
+                <div class="offset-2">
                     <hr class="highlight">
                 </div>
             </div>
-            <div class="row">
+            <div class="row unq">
                 <div class="col-md-1 left">
-                    <img src="img/Quote.png" alt="Quotes">
+                    <img class="img-responsive" src="assets/img/Quote.png" alt="Quotes">
                 </div>
-                <div class="col-md-10 col-md-offset-1">
-                    <h1><em>Unquestionably people who run their own business in the United States are very satisfied with their lives.</em></h1>
+                <div class="col-md-10 col-md-offset-1 un">
+                    <h1 class="unqq">Unquestionably people who run their own business in the United States are very satisfied with their lives.</h1>
                     <h4 class="highlight">Donna E. Kelley, Lead researcher of the Global
 Entrepreneurship Monitor</h4>
                 </div>
             </div>
         </div>
-    </section>
+    
     
      <div class="row invite">
+     <div class="container">
                 <div class="col-md-12">
-                    <h3 class="highlight text-center">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
+                    <h3 class="highlight text-center wan">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
                 </div>
-                    <div class="col-md-12 col-sm-12 subscribe">
+                    <div class="col-md-12 col-sm-12 subscribe form-left">
                         <form class="form-horizontal" role="form" name="subscribeForm" id="subscribeForm" action="http://us9.list-manage.com/subscribe/post" method="POST">
     <input type="hidden" name="u" value="b600c45ad15be7a2768e4b48f">
     <input type="hidden" name="id" value="c4543fa3e3">
                             <div class="form-group">
                                 <div class="col-md-5 col-sm-6 col-sm-offset-1 col-md-offset-2">
-                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required="required" value="">
+                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
                                 </div>
-                            <div class="col-md-4 col-sm-4">
-                                <button type="submit" name="submit" class="btn cta btn-lg">REQUEST AN INVITE</button>
+                            <div class="col-md-4 col-sm-4 submission">
+                                <button type="submit" name="submit" class="btn cta btn-lg m-btn">REQUEST AN INVITE</button>
                              </div>
                          </div>
                      </form>
 				</div>
             </div>
-    
-    <section id="you">
+         </div>
+         </section>
+    <section class="you" id="you2">
         <div class="container">
             <div class="row">
-                <h1 class="sectionheader text-center">What kind of people is pitchLove looking for?</h1>
+                <h1 class="sectionheader text-center kind">What kind of people is pitchLove looking for?</h1>
             </div>
         </div>
         <div class="container space">
             <div class="row text-center">
-                <p id="huge">YOU!</p>
+                <h2 id="huge">YOU!</h2>
             </div>
             <div class="row">
                 <div class="col-md-1 left">
-                    <br>
-                    <img src="img/Info_White.png" alt="Info-White">
+                    <img class="img-responsive" src="assets/img/Info_White.png" alt="Info-White">
                 </div>
-                <div class="col-md-10 col-md-offset-1">
-                    <h1 class="dark">Truth is...</h1>
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h1 class="dark tru">Truth is...</h1>
+                    <h2 style="color:#ffffff; padding-bottom:5%;">People of every generation are taking a chance at owning their dreams by  opening their own businesses:</h2>
                 </div>
-                <div class="col-md-1"></div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <h2>People of every generation are taking a chance at owning their dreams by
-opening their own businesses:</h2>
-                </div>
-                <div class="col-md-1"></div>
             </div>
         </div>
     </section>
     
     <section id="people">
-            <div id="people-tabs" class="peopletabs">
-              <ul>
-                <li><a href="#tabs-1">Minorities</a></li>
-                <li><a href="#tabs-2">Immigrants</a></li>
-                <li><a href="#tabs-3">Women</a></li>
-                <li><a href="#tabs-4">Millennials</a></li>
-                <li><a href="#tabs-5">Baby Boomers</a></li>
-              </ul>
-              <div id="tabs-1">
-                  <div class="row">
+        <div class="container">
+           <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#Minorities" aria-controls="Minorities" role="tab" data-toggle="tab">Minorities</a></li>
+    <li role="presentation"><a href="#Immigrants" aria-controls="Immigrants" role="tab" data-toggle="tab">Immigrants</a></li>
+    <li role="presentation"><a href="#Women" aria-controls="Women" role="tab" data-toggle="tab">Women</a></li>
+    <li role="presentation"><a href="#Millennials" aria-controls="Millennials" role="tab" data-toggle="tab">Millennials</a></li>
+    <li role="presentation"><a href="#baby" aria-controls="baby" role="tab" data-toggle="tab">Baby Boomers</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="Minorities">
+ 
+                   <div class="row">
                       <div class="col-md-3">
-                        <img src="img/40percent.png" alt="40%">
+                        <img class="img-responsive" src="assets/img/40percent.png" alt="40%">
                       </div>
                       <div class="col-md-9">
-                        <h3><span class="highlight">Nearly 40% of the nation’s entrepreneurs are non-Caucasian.</span> Minorities own 15.1% of all U.S. businesses, or more than 3 million firms, and 99% of these firms are small businesses. More than one-third of minority-owned firms are owned by Hispanics.</h3>
+                        <h3 class="near"><span class="highlight">Nearly 40% of the nation’s entrepreneurs are non-Caucasian.</span> Minorities own 15.1% of all U.S. businesses, or more than 3 million firms, and 99% of these firms are small businesses. More than one-third of minority-owned firms are owned by Hispanics.</h3>
                         <h4 class="text-muted"><em>Source: <a href="
 http://www.forbes.com/sites/cherylsnappconner/2012/07/22/whos-starting-
 americas-new-businesses-and-why/">Forbes</a>, <a href="http://www.entrepreneur.com/sbe/minority/">Entrepreneur</a></em></h4>
                         </div>
                     </div>
-              </div>
-              <div id="tabs-2">
-                <div class="row">
+
+ 
+    </div><!-- end tab one -->
+    <div role="tabpanel" class="tab-pane" id="Immigrants">
+ 
+                 <div class="row">
                       <div class="col-md-3">
-                        <img src="img/80percent.png" alt="80%">
+                        <img class="img-responsive" src="assets/img/80percent.png" alt="80%">
                       </div>
                       <div class="col-md-9">
-                        <h3><span class="highlight">Immigrants are a major driving force in the entrepreneurial scene.</span> 80 percent of immigrant high-tech entrepreneurs operate in the twenty-five largest U.S. metropolitan areas, compared with only 57 percent of their American-born counterparts.</h3>
+                        <h3 class="near"><span class="highlight">Immigrants are a major driving force in the entrepreneurial scene.</span> 80 percent of immigrant high-tech entrepreneurs operate in the twenty-five largest U.S. metropolitan areas, compared with only 57 percent of their American-born counterparts.</h3>
                         <h4 class="text-muted"><em>Source: <a href="
 http://www.forbes.com/sites/elainepofeldt/2013/05/27/u-s-entrepreneurship-
 hits-record-high/">Forbes</a>, <a href="http://www.kauffman.org/thoughtbook2015/exploring-and- engaging#entrepreneurshipstartsathome">Kauffman Foundation Thoughtbook 2015</a></em></h4>
                         </div>
                     </div>
-              </div>
-              <div id="tabs-3">
+
+    
+    </div><!-- end tab 2 -->
+    <div role="tabpanel" class="tab-pane" id="Women">
+    
                   <div class="row">
                       <div class="col-md-3">
-                        <img src="img/2to1.png" alt="2to1">
+                        <img class="img-responsive" src="assets/img/2to1.png" alt="2to1">
                       </div>
                       <div class="col-md-9">
-                          <h3><span class="highlight">The gender gap is slowly closing, though male-owned still outnumber womenowned business from 2 to 1.</span> However, more women are making the leap into entrepreneurship, including Millennial moms. In fact, 69% of new businesses start at home.</h3>
+                           <h3 class="near"><span class="highlight">The gender gap is slowly closing, though male-owned still outnumber womenowned business from 2 to 1.</span> However, more women are making the leap into entrepreneurship, including Millennial moms. In fact, 69% of new businesses start at home.</h3>
                         <h4 class="text-muted"><em>Source: <a href="
 http://www.forbes.com/sites/cherylsnappconner/2012/07/22/whos-starting-
 americas-new-businesses-and-why/">Forbes</a>, <a href="http://www.babycenter.com/100_babycenter-174-reveals-profile-of-today-8217- s-millennial-mo_10391450.bc">Babycenter</a></em></h4>
                         </div>
                     </div>
-                </div>
-            <div id="tabs-4">
+    
+    </div><!-- end tab -->
+    <div role="tabpanel" class="tab-pane" id="Millennials">..
                 <div class="row">
                       <div class="col-md-3">
-                        <img src="img/30percent.png" alt="30%">
+                        <img class="img-responsive" src="assets/img/30percent.png" alt="30%">
                       </div>
                       <div class="col-md-9">
-                          <h3><span class="highlight">Nearly 30% of entrepreneurs are between the ages of 20-34.</span> Millennials are underemployed but daring risk-takers, highly-educated
+                          <h3 class="near"><span class="highlight">Nearly 30% of entrepreneurs are between the ages of 20-34.</span> Millennials are underemployed but daring risk-takers, highly-educated
 ￼￼ ￼￼￼￼￼￼yet straddled with student loan debt, were raised with technology and new media. In addition, they are environmentally and health-conscious, which have emerged as more than lifestyle trends, but reforming cultural norms. </h3>
                           <h4 class="text-muted"><em>Source: <a href="
 http://www.forbes.com/sites/cherylsnappconner/2012/07/22/whos-starting-
 americas-new-businesses-and-why/">Forbes</a>, <a href="http://www.babycenter.com/100_babycenter-174-reveals-profile-of-today-8217- s-millennial-mo_10391450.bc">Babycenter</a></em></h4>
                     </div>
                 </div>
-            </div>
-                <div id="tabs-5">
+    
+    </div><!-- end tab -->
+    <div role="tabpanel" class="tab-pane" id="baby">
                     <div class="row">
                       <div class="col-md-3">
-                        <img src="img/1in4.png" alt="1in4">
+                        <img class="img-responsive" src="assets/img/1in4.png" alt="1in4">
                       </div>
                       <div class="col-md-9">
-                          <h3><span class="highlight">One in four Americans ages 44-70 are interested in starting their own businesses in the next five to 10 years.</span> Longer and healthier life spans and the increasing need to actualize an unfulfilled desire to become a first-time entrepreneur or in some cases, serial entrepreneurism is a common factor. Forbes contributor and entrepreneurship author, Marty Zwilling, calls entrepreneurship “the new “mid-life crisis.” </h3>
+                          <h3 class="near"><span class="highlight">One in four Americans ages 44-70 are interested in starting their own businesses in the next five to 10 years.</span> Longer and healthier life spans and the increasing need to actualize an unfulfilled desire to become a first-time entrepreneur or in some cases, serial entrepreneurism is a common factor. Forbes contributor and entrepreneurship author, Marty Zwilling, calls entrepreneurship “the new “mid-life crisis.” </h3>
                           <h4 class="text-muted"><em>Source: <a href="
 http://www.forbes.com/sites/cherylsnappconner/2012/07/22/whos-starting-
 americas-new-businesses-and-why/">Forbes</a>, <a href="http://www.encore.org/files/EntrepreneurshipFastFacts.pdf">Encore</a></em></h4>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+   </div><!-- end tab -->
+  </div>
+
+</div>
+    </div>
+    
+    </section><!-- end tab -->
     
     <section id="poem">
         <div class="container">
             <div class="row">
-                <h1 class="sectionheader text-center">Still undecided? How about a little inspiration?</h1>
+                <h1 class="sectionheader unds text-center">Still undecided? How about a little inspiration?</h1>
             </div>
         </div>
         <div class="container space">
             <div class="row text-center">
-                <h1><strong>What happens to a dream deferred?</strong></h1>
-                <div class="col-sm-6 col-sm-offset-3">
+                <h1 class="dark"><strong>What happens to a dream deferred?</strong></h1>
+                <div class="col-sm-6 col-sm-offset-3 tet">
                     <h1 class="highlight">Does it dry up</h1>
                     <h1 class="highlight">like a raisin in the sun?</h1>
                     <h1 class="highlight">Or fester like a sore--</h1>
@@ -368,37 +391,40 @@ americas-new-businesses-and-why/">Forbes</a>, <a href="http://www.encore.org/fil
                     <h1 class="highlight">like a syrupy sweet?</h1>
                     <h1 class="highlight">Maybe it just sags</h1>
                     <h1 class="highlight">like a heavy load.</h1>
-                    <h1 class="highlight">Or does it <strong>explode</strong>?</h1>
+                    <h1 class="highlight">Or does it <strong class="dark">EXPLODE</strong>?</h1>
                     <br>
                     <h3 class="highlight">“A Dream Deferred” by Langston Hughes</h3>
                 </div>
             </div>
         </div>
     </section>
-    
-    <div class="row invite">
+        
+        <div class="row invite in-bg">
+        	<div class="container">
                 <div class="col-md-12">
-                    <h3 class="highlight text-center">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
+                    <h3 class="highlight text-center wan">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
                 </div>
-                    <div class="col-md-12 col-sm-12 subscribe">
+                    <div class="col-md-12 col-sm-12 subscribe form-left">
                         <form class="form-horizontal" role="form" name="subscribeForm" id="subscribeForm" action="http://us9.list-manage.com/subscribe/post" method="POST">
     <input type="hidden" name="u" value="b600c45ad15be7a2768e4b48f">
     <input type="hidden" name="id" value="c4543fa3e3">
                             <div class="form-group">
                                 <div class="col-md-5 col-sm-6 col-sm-offset-1 col-md-offset-2">
-                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required="required" value="">
+                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
                                 </div>
-                            <div class="col-md-4 col-sm-4">
-                                <button type="submit" name="submit" class="btn cta btn-lg">REQUEST AN INVITE</button>
+                                <div class="col-md-4 col-sm-4 submission">
+                                    <button type="submit" name="submit" class="btn cta btn-lg m-btn">REQUEST AN INVITE</button>
+                                 </div>
                              </div>
-                         </div>
                      </form>
 				</div>
             </div>
+        </div>
+
     
-    <section id="ideas">
+    <section id="ideas" class="you">
         <div class="container">
-            <div class="row">
+            <div class="row" id="protect">
                 <h1 class="sectionheader text-center">So what do you have to lose?</h1>
             </div>
         </div>
@@ -406,13 +432,13 @@ americas-new-businesses-and-why/">Forbes</a>, <a href="http://www.encore.org/fil
             <div class="row">
                 <h2 class="bigger">WHAT IF SOMEONE STEALS MY IDEA?</h2>
             </div>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
+            <div class="row hrr">
+                <div class="offset-2">
                     <hr>
                 </div>
             </div>
             <div class="row">
-                <h1><strong class="dark">This is a risk, but not a very likely situation.</strong></h1>
+                <h1><strong class="dark risk">This is a risk, but not a very likely situation.</strong></h1>
             </div>
             <div class="row">
                 <h2 class="bigger">WHY?</h2>
@@ -421,167 +447,222 @@ americas-new-businesses-and-why/">Forbes</a>, <a href="http://www.encore.org/fil
     </section>
     
     <section id="reasons">
-            <div id="reasons-tabs" class="reasonstabs">
-              <ul>
-                <li><a href="#tab-1">Do Nothing</a></li>
-                <li><a href="#tab-2">Idea Worth</a></li>
-                <li><a href="#tab-3">Differentiation</a></li>
-                <li><a href="#tab-4">Patents</a></li>
-                <li><a href="#tab-5">Use pitchLove</a></li>
-              </ul>
-              <div id="tab-1">
+        <div class="container">
+           <div role="tabpanel">
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#DoNothing" aria-controls="DoNothing" role="tab" data-toggle="tab">Do Nothing</a></li>
+    <li role="presentation"><a href="#IdeaWorth" aria-controls="IdeaWorth" role="tab" data-toggle="tab">Idea Worth</a></li>
+      <li role="presentation"><a href="#Patents" aria-controls="Patents" role="tab" data-toggle="tab">Patents</a></li>
+    <li role="presentation"><a href="#Differentiation" aria-controls="Differentiation" role="tab" data-toggle="tab">Differentiation</a></li>
+    <li role="presentation"><a href="#UsepitchLove" aria-controls="UsepitchLove" role="tab" data-toggle="tab">pitchLove Value</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="DoNothing">
+ 
                   <div class="row">
                       <div class="col-md-3">
-                        <img src="img/reason1.png" alt="Reason 1">
+                        <img class="img-responsive" src="assets/img/reason1.png" alt="Reason 1">
                       </div>
                       <div class="col-md-9">
-                        <h3>Why not, you could do nothing and gain nothing, but might be missing out on a <strong>HUGE</strong> opportunity.</h3>
+                        <h3 class="whyy">Why not, you could do nothing and gain nothing, but might be missing out on a <strong class="highlight">HUGE</strong> opportunity.</h3>
                         </div>
                     </div>
-              </div>
-              <div id="tab-2">
-                <div class="row">
-                      <div class="col-md-3">
-                        <img src="img/reason2.png" alt="Reason 2">
-                      </div>
-                      <div class="col-md-8">
-                          <h3><span class="highlight">An idea isn't worth much at all.</span> You could put it up on eBay and make nothing off of it.</h3> 
-                          <h3><span class="highlight">Execution is real value for an innovative idea.</span></h3>
-                        </div>
-                    </div>
-              </div>
-              <div id="tab-3">
-                  <div class="row">
-                      <div class="col-md-3">
-                        <img src="img/reason3.png" alt="Reason 3">
-                      </div>
-                      <div class="col-md-9">
-                          <h3><span class="highlight">Patents are expensive and hard to defend. In today's advanced tech world, it's pretty simple to make a small change on your patent and create something totally new.</span> Patent lawsuits are a considerable drain on resources, time and require too much effort to prove infringement in court. For example, Facebook is a huge business that doesn't have much proprietary technology, yet can be easily reverse engineered and replicated.</h3>
-                        </div>
-                    </div>
-                </div>
-            <div id="tab-4">
-                <div class="row">
-                      <div class="col-md-3">
-                        <img src="img/reason4.png" alt="Reason 4">
-                      </div>
-                      <div class="col-md-9">
-                          <h3>The triple threat to build a business that dominates a market must have innovative technology attached to it, a disruptive business model, and an effective, segmented target market with a go-to market strategy. <span class="highlight">That is what differentiates your average business from an impressive underdog amongst giants.</span></h3>
-                    </div>
-                </div>
-            </div>
-                <div id="tab-5">
+ 
+    </div><!-- end tab one -->
+    <div role="tabpanel" class="tab-pane" id="IdeaWorth">
                     <div class="row">
                       <div class="col-md-3">
-                        <img src="img/reason5.png" alt="5">
+                        <img class="img-responsive" src="assets/img/reason2.png" alt="Reason 2">
+                      </div>
+                      <div class="col-md-8">
+                           <h3 class="whyy"><span class="highlight">An idea isn't worth much at all.</span> You could put it up on eBay and make nothing off of it.</h3> 
+                           <h3 class="whyy"><span class="highlight">Execution is real value for an innovative idea.</span></h3>
+                        </div>
+                    </div>
+    </div><!-- end tab -->
+
+    <div role="tabpanel" class="tab-pane" id="Patents">
+                <div class="row">
+                      <div class="col-md-3">
+                        <img class="img-responsive" src="assets/img/reason4.png" alt="Reason 3">
                       </div>
                       <div class="col-md-9">
-                          <h3><span class="highlight">It's more than worth your time and attainable to build a great business quickly that offers great value to your customers.</span> You can do that by presenting your idea in front of your future customers, understanding their problems and needs, and building a solution that provides those customers with significant value. pitchLove helps you to do that quickly and with ease. </h3>
+                           <h3 class="whyy"><span class="highlight">Patents are expensive and hard to defend. In today's advanced tech world, it's pretty simple to make a small change on your patent and create something totally new.</span> Patent lawsuits are a considerable drain on resources, time and require too much effort to prove infringement in court. For example, Facebook is a huge business that doesn't have much proprietary technology, yet can be easily reverse engineered and replicated.</h3>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+    
+    </div><!-- end tab -->
+      
+       <div role="tabpanel" class="tab-pane" id="Differentiation">
+                  <div class="row">
+                      <div class="col-md-3">
+                        <img class="img-responsive" src="assets/img/reason3.png" alt="Reason 4">
+                      </div>
+                      <div class="col-md-9">
+                           <h3 class="whyy">The triple threat to build a business that dominates a market must have innovative technology attached to it, a disruptive business model, and an effective, segmented target market with a go-to market strategy. <span class="highlight">That is what differentiates your average business from an impressive underdog amongst giants.</span></h3>
+                        </div>
+                    </div>
+    
+    </div><!-- end tab -->
+    <div role="tabpanel" class="tab-pane" id="UsepitchLove">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <img class="img-responsive" src="assets/img/reason5.png" alt="5">
+                      </div>
+                      <div class="col-md-9">
+                           <h3 class="whyy"><span class="highlight">It's more than worth your time and attainable to build a great business quickly that offers great value to your customers.</span> You can do that by presenting your idea in front of your future customers, understanding their problems and needs, and building a solution that provides those customers with significant value. pitchLove helps you to do that quickly and with ease. </h3>
+                    </div>
+                </div>
+    
+    </div><!-- end tab -->
+  </div>
+
+</div>
+    </div>
+    
+    </section><!-- end tab -->
     
     <section id="final">
         <div class="container space">
             <div class="row">
-                <h2 class="bigger text-center">I’d still feel safer with an NDA.</h2>
+                <h2 class="bbb text-center">I’d still feel safer with an NDA.</h2>
             </div>
-            <div class="row">
-                <div class="col-xs-8 col-xs-offset-2">
+            <div class="row hrr">
+                <div class="offset-2">
                     <hr>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-1 left">
                     <br>
-                    <img src="img/Info_Green.png" alt="Info Green">
+                    <img class="img-responsive" src="assets/img/Info_Green.png" alt="Info Green">
                 </div>
-                <div class="col-md-10 col-md-offset-1">
-                    <h2><strong>Non-disclosure agreements are standard practice nowadays because people wholeheartedly believe that their ideas are brand new. In actuality, no idea is original anymore.</strong></h2>
-                    <h3 class="highlight">A disruptive idea these days is merely a mashup or remix of something that's existed before.</h3>
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h2 class="non"><strong>Non-disclosure agreements are standard practice nowadays because people wholeheartedly believe that their ideas are brand new. In actuality, no idea is original anymore.</strong></h2>
+                    <h3 class="highlight non diss">A disruptive idea these days is merely a mashup or remix of something that's existed before.</h3>
                 </div>
             </div>
-            <div class="row text-center">
-                <div class="col-xs-8 col-xs-offset-2">
+            <div class="row hrr">
+                <div class="offset-2">
                     <hr>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h3>YOUR DREAM IS JUST THE <span class="highlight">BEGINNING</span> OF THE STORY.</h3>
+                    <h3 class="your">YOUR DREAM IS JUST THE <span class="highlight">BEGINNING</span> OF THE STORY.</h3>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-12">
-                    <h1 class="highlight">WHAT YOU DO NEXT IS WHAT</h1>
-                    <img src="img/Pitchlove_logo.png" alt="pitchLove large logo">
-                    <h1 class="highlight">IS ALL ABOUT.</h1>
-                    <img src="img/Pitchlove_CreateAccount_Macbook.png" alt="pitchLove Create Account">
+                    <h1 class="highlight whh">WHAT YOU DO NEXT IS WHAT</h1>
+                </div>
+                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <img src="assets/img/Pitchlove_logo.png" alt="pitchLove large logo" class="img-responsive" id="biglogo">
+               
+                    <h1 class="highlight whh">IS ALL ABOUT.</h1>
+                </div>
+                <div class="col-md-12">
+                    <img id="main-img" src="assets/img/Pitchlove_CreateAccount_Macbook.png" alt="pitchLove Create Account">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-        
-    <div class="row invite">
+
+        <div class="row invite in-bg">
+        	<div class="container">
                 <div class="col-md-12">
-                    <h3 class="highlight text-center">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
+                    <h3 class="highlight text-center wan">WANT TO JOIN OUR COMMUNITY OF TRAILBLAZERS?</h3>
                 </div>
-                    <div class="col-md-12 col-sm-12 subscribe">
+                    <div class="col-md-12 col-sm-12 subscribe form-left">
                         <form class="form-horizontal" role="form" name="subscribeForm" id="subscribeForm" action="http://us9.list-manage.com/subscribe/post" method="POST">
     <input type="hidden" name="u" value="b600c45ad15be7a2768e4b48f">
     <input type="hidden" name="id" value="c4543fa3e3">
                             <div class="form-group">
                                 <div class="col-md-5 col-sm-6 col-sm-offset-1 col-md-offset-2">
-                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required="required" value="">
+                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
                                 </div>
-                            <div class="col-md-4 col-sm-4">
-                                <button type="submit" name="submit" class="btn cta btn-lg">REQUEST AN INVITE</button>
+                                <div class="col-md-4 col-sm-4 submission">
+                                    <button type="submit" name="submit" class="btn cta btn-lg m-btn">REQUEST AN INVITE</button>
+                                 </div>
                              </div>
-                         </div>
                      </form>
 				</div>
             </div>
+        </div> 
 
         <!-- Footer -->
         <footer id="bottom">
-            <div class="row full">
-                <div class="col-sm-3">
-                    <img src="img/Pitchlove_small.png" alt="Original pitchLove Logo">
+        	<div class="container">
+                <div class="col-md-3 col-sm-4">
+                    <img class="img-responsive" src="assets/img/Pitchlove_small.png" alt="Original pitchLove Logo">
+                    <p>Copyright &copy; pitchLove 2014</p>
                 </div>
-                <div class="col-sm-6 col-sm-offset-1">
+                <div class="col-md-6 col-md-offset-1 col-sm-4 extraspacing">
+                    <br>
+                    <br>
+                    <br>
                     <h3>For more information about pitchLove, send an email with your inquiry to <a href="mailto:info@e2.is?Subject=Hello%20again">info@e2.is.</a></h3>
                 </div>
-                <div class="col-sm-2 text-center">
-                    <a href="#top" class="glyphicon glyphicon-collapse-up" aria-label="Left Align" height="50px"></a>
-                    <h4>GO UP</h4>
+                <div class="col-md-2 col-sm-4 text-center extraspacing">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="#top"  aria-label="Left Align" height="40px"><img src="assets/img/up.jpg" alt="GoUP" /></a>
+                   
                 </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <small>Copyright &copy; pitchLove 2014</small>
-                </div>
-            </div>
+            </div>   
         </footer>
 
     </div>
     <!-- /.container -->
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery-ui.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    
+
     <script>
-      $(function() {
-        $("#people-tabs").tabs();
-        $("#reasons-tabs").tabs();
-      });
+        $(function(){
+            setSizeAlerts();
+            $(window).resize(function(){
+                setSizeAlerts1();
+            });
+         });
+        function setSizeAlerts1() {
+            if ($(window).width() <= 992){	
+                $("div.ourplatform1").removeClass("col-sm-offset-1");
+                $("div.ourplatform2").addClass("col-sm-offset-1");
+                $("div.ourplatform5").addClass("col-sm-offset-1");
+                $("div.extraspacing").find("br").remove("br");
+            }	
+            if ($(window).width() > 992){	
+                $("div.ourplatform1").addClass("col-sm-offset-1");
+                $("div.ourplatform2").removeClass("col-sm-offset-1");
+                $("div.ourplatform5").removeClass("col-sm-offset-1");
+            }
+        }
+        } 
+
     </script>
+
+    <script type="text/javascript">stLight.options({publisher: "50f6f55e-6a2a-4a69-957d-fc90af3b6c5a", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script>
+var options={ "publisher": "50f6f55e-6a2a-4a69-957d-fc90af3b6c5a", "logo": { "visible": true, "url": "pitchlove.co", "img": "https: //drive.google.com/a/e2.is/file/d/0Bytd3klYfchNRnFZOTVuOWJfUms/view?usp=sharing", "height": 45}, "ad": { "visible": false, "openDelay": "5", "closeDelay": "0"}, "livestream": { "domain": "", "type": "sharethis", "customColors": { "widgetBackgroundColor": "#FFFFFF", "articleLinkColor": "#006fbb"}}, "ticker": { "visible": false, "domain": "", "title": "", "type": "sharethis", "customColors": { "widgetBackgroundColor": "#a0adc7", "articleLinkColor": "#00487f"}}, "facebook": { "visible": false, "profile": "sharethis"}, "fblike": { "visible": true, "url": ""}, "twitter": { "visible": false, "user": "@e2isinnovation"}, "twfollow": { "visible": false}, "custom": [{ "visible": false, "title": "Custom 1", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 2", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}, { "visible": false, "title": "Custom 3", "url": "", "img": "", "popup": false, "popupCustom": { "width": 300, "height": 250}}], "chicklets": { "items": ["facebook", "twitter", "linkedin", "googleplus", "reddit", "wordpress", "tumblr", "buffer", "pocket", "pinterest", "email", "sharethis"]}, "background": "#103071", "color": "#ffffff", "arrowStyle": "light", "shadow": "gloss"};
+var st_bar_widget = new sharethis.widgets.sharebar(options);
+</script>
+
+        <!-- Placed at the end of the document so the pages load faster -->
+	<script src="assets/js/classie.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/smoothscroll.js"></script>
+	<script src="assets/js/main.js"></script>
 
 </body>
 
