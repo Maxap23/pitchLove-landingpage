@@ -66,10 +66,10 @@ footer {
 .bigger {
   color: hsl(0, 0%, 100%);
   font-size: 65px;
-  padding: 2px 0 20px;
 }
-#protect h1 {
+#protect h1, #about h1, #you2 h1, #final h1, #ideas h1, #poem h1, #entrepreneurship h1, #platform h1 {
   font-size: 47px;
+    padding-bottom: 3%;
 }
 .risk {
   font-size: 45px;
@@ -289,9 +289,6 @@ a:after {
   font-size: 60px;
   padding-top: 23px;
 }
-.highlight.maincta {
-  margin: 22px 0 23px;
-}
 #main-cta img {
   max-width: 688px;
   padding-top: 15px;
@@ -319,10 +316,11 @@ a:after {
 }
 .ab-bg {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
-  padding: 50px 0;
+  padding: 2% 0;
 }
 .bar {
   border-right: 1px solid hsl(0, 0%, 100%);
+    border-left: 1px solid hsl(0, 0%, 100%);
 }
 .howd {
   padding-bottom: 50px;
@@ -332,7 +330,7 @@ a:after {
 }
 .offset-2 > hr {
   margin: 0 auto;
-  padding-top: 15px;
+  padding-top: 2%;
   text-align: center;
   width: 60%;
 }
@@ -471,6 +469,14 @@ footer h3 {
   transform: rotate(-45deg);
 }
 
+.sectionheader h1 {
+    font-size: 47px;
+}
+
+#fea {
+    padding-top: 2%;
+}
+
 @media screen and (max-device-width: 992px) {
     .nav > li > a {
         font-size: 110%;
@@ -483,6 +489,7 @@ footer h3 {
 @media screen and (max-device-width: 768px) {
     .bar {
       border-right: none;
+        border-left: none;
     }
     #s-text > h2, #s-text > h3 {
         font-size: 120%;
