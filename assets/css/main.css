@@ -1,7 +1,7 @@
 
 body {
   background-color: #f2f2f2;
-   font-family: 'Exo 2', serif;
+   font-family: 'Exo', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -19,11 +19,7 @@ h1, h2, h3, h4, h5, h6 {
   background: none repeat scroll 0 0 hsl(0, 0%, 100%);
 }
 #s-text > h2 {
-  font-size: 40px;
-}
-.bbb {
-  font-size: 50px;
-  padding: 20px 0;
+  font-size: 250%;
 }
 .form-left {
  /* margin-left: 57px;*/
@@ -32,11 +28,11 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(173, 70%, 44%) !important;
 }
 #s-text > h3 {
-  font-size: 34px;
+  font-size: 213%;
 }
 .h-right.col-sm-6 {
-  padding-right: 61px;
-  padding-top: 36px;
+  padding-right: 5%;
+  padding-top: 3%;
   text-align: right;
 }
 #main-img {
@@ -44,44 +40,36 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
 }
 footer {
-  background: #23bfae;
-  border-top:5px solid #1fac9c;
-  
-  padding: 20px 0;
+  background-color: #23bfae;
 }
 #huge {
   color: hsl(0, 0%, 100%);
-  font-size: 125px;
+  font-size: 775%;
 }
 .tru {
-  font-size: 52px;
+  font-size: 313%;
   font-weight: bold;
 }
 .you {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
 }
 #ideas {
-  padding: 30px 0 40px;
+  padding: 3% 0 4%;
 }
 .bigger {
   color: hsl(0, 0%, 100%);
-  font-size: 65px;
+  font-size: 400%;
 }
-#protect h1, #about h1, #you2 h1, #final h1, #ideas h1, #poem h1, #entrepreneurship h1, #platform h1 {
-  font-size: 47px;
+#protect h1.sectionheader, #about h1.sectionheader, #you2 h1.sectionheader, #final h1.sectionheader, #ideas h1.sectionheader, #poem h1.sectionheader, #entrepreneurship h1.sectionheader, #platform h1.sectionheader {
+  font-size: 300%;
     padding-bottom: 3%;
-}
-.risk {
-  font-size: 45px;
-}
-.kind {
-  padding: 15px;
 }
 .m-btn {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
   border-radius: 5px;
   color: hsl(0, 0%, 100%);
-  padding: 10px 15px;
+  padding: 2% 2.5%;
+    font-size: 150%;
 }
 #top > img {
   margin: 0 auto;
@@ -94,15 +82,14 @@ footer {
   width: 100%;
 }
 #s-text {
-  margin-bottom: 30px;
-  margin-top: -167px;
+  margin-top: -12%;
   text-align: center;
 }
 
 /* Paragraph & Typographic */
 p {
     line-height: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 3%;
 }
 
 .centered {
@@ -155,8 +142,8 @@ a:after {
 
 .menu {
 	position: fixed;
-	right: -200px;
-	width: 260px;
+	right: -20%;
+	width: 20%;
 	height: 100%;
 	top: 0;
 	z-index: 10;
@@ -170,21 +157,21 @@ a:after {
 .menu-wrap {
 	position: absolute;
 	top: 0;
-	left: 60px;
+	left: 5%;
 	background: #1a1a1a;
-	width: 200px;
+	width: 125%;
 	height: 100%;
 }
 
 .menu h1.logo a {
 	font-family: 'Raleway', Helvetica, Arial, sans-serif;
-	font-size: 16px;
+	font-size: 150%;
 	font-weight: 800;
 	letter-spacing: 0.15em;
 	line-height: 40px;
 	text-transform: uppercase;
 	color: #ffffff;
-	margin-top: 20px;
+	margin-top: 2%;
 }
 
 .menu h1.logo a:hover {
@@ -192,15 +179,15 @@ a:after {
 }
 
 .menu img.logo {
-	margin: 20px 0;
+	margin: 2% 0;
 	max-width: 160px;
 }
 
 .menu a {
-	margin-left: 20px;
+	margin-left: 2%;
 	color: #808080;
 	display: block;
-	font-size: 12px;
+	font-size: 150%;
 	font-weight: 700;
 	line-height: 40px;
 	letter-spacing: 0.1em;
@@ -221,19 +208,19 @@ a:after {
 	vertical-align: middle; 
 	text-align: left;
 	width: 25px;
-	font-size: 14px;
+	font-size: 150%;
 	line-height: 40px;
-	margin: 25px 2px;
+	margin: 3% .5%;
 }
 
 .menu-close {
 	cursor: pointer;
 	display: block;
 	position: absolute;
-	font-size: 14px;
+	font-size: 150%;
 	color: #808080;
-	width: 40px;
-	height: 40px;
+	width: 5%;
+	height: 5%;
 	line-height: 40px;
 	top: 20px;
 	right: 5px;
@@ -261,11 +248,11 @@ a:after {
 }
 
 .body-push-toright {
-	left: 200px;
+	left: 20%;
 }
 
 .body-push-toleft {
-	left: -200px;
+	left: -20%;
 }
 
 .menu,
@@ -278,33 +265,34 @@ a:after {
 }
 .int-bg {
   background: none repeat scroll 0 0 hsl(0, 0%, 96%);
-  border-top: 3px solid hsl(0, 0%, 87%);
 }
 .in-bg {
   background: none repeat scroll 0 0 hsl(0, 0%, 100%);
-  padding: 15px 0;
+  padding: 2% 0;
+    width: 100%;
+}
+ent-bg{
     width: 100%;
 }
 .pit {
-  font-size: 60px;
-  padding-top: 23px;
+  font-size: 425%;
+  padding-top: 3%;
 }
 #main-cta img {
   max-width: 688px;
-  padding-top: 15px;
   width: 100%;
 }
 .tab-content {
-  padding: 30px 0;
+  padding: 2%;
 }
 #people, #reasons {
   background: none repeat scroll 0 0 hsl(0, 0%, 100%);
-  padding-bottom: 20px;
+  padding-bottom: 2%;
 }
 #poem {
   background: none repeat scroll 0 0 hsl(0, 0%, 96%);
   border-top: 3px solid hsl(0, 0%, 87%);
-  padding: 20px 0;
+  padding: 2% 0;
 }
 .wan {
   font-size: 36px;
@@ -323,10 +311,7 @@ a:after {
     border-left: 1px solid hsl(0, 0%, 100%);
 }
 .howd {
-  padding-bottom: 50px;
-}
-#fea {
-  padding-bottom: 30px;
+  padding-bottom: 5%;
 }
 .offset-2 > hr {
   margin: 0 auto;
@@ -338,48 +323,35 @@ a:after {
   color: hsl(0, 0%, 0%);
 }
 .unq{
-	padding-bottom:15px;}
+	padding-bottom:2%;}
 .plat-bg {
-  padding-bottom: 40px;
+  padding: 3%;
 }
 #entrepreneurship {
   background: none repeat scroll 0 0 hsl(0, 0%, 100%);
-  padding: 20px 0;
-}
-#ent-bg {
-  padding: 10px 0;
-}
-#wor {
-  padding: 0 70px;
-}
-.sss {
-  font-size: 42px;
-  padding: 27px 0 6px;
+  padding: 2% 0;
 }
 .tgf {
-  padding-bottom: 35px;
+  padding-bottom: 2%;
 }
 .bgh {
-  font-size: 26px;
-  padding-bottom: 20px;
+  font-size: 213%;
+  padding-bottom: 2%;
 }
 #pitc {
-  padding-bottom: 25px;
-}
-#howdo {
-  padding: 0 5%;
+  padding-bottom: 3%;
 }
 .whit {
   color: hsl(0, 0%, 100%);
 }
 #menuToggle {
 	position: absolute;
-	top: 25px;
-	left: 0;
+	top: 5%;
+	left: -25%;
 	z-index: 11;
 	display: block;
 	text-align: center;
-	font-size: 40px;
+	font-size: 275%;
 	color: #1e2936;
 	width: 40px;
 	height: 40px;
@@ -403,14 +375,14 @@ a:after {
 			transition: all .1s ease-in-out;
 }
 
-#biglogo > img {
+#biglogo  {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
 }
 
 .nav-tabs > li {
-    width: 19.5%;
+    width: 19.9%;
     text-align: center;
 }
 
@@ -419,7 +391,7 @@ footer h3 {
 }
 
 .left {
-    right: 90%;
+    right: 92%;
     position: absolute;
 }
 
@@ -428,7 +400,7 @@ footer h3 {
 }
 
 .nav > li > a {
-    padding: 16px 2%;
+    padding: 2% 2%;
 }
 
 .edge {
@@ -469,12 +441,24 @@ footer h3 {
   transform: rotate(-45deg);
 }
 
-.sectionheader h1 {
-    font-size: 47px;
+#fea {
+    padding: 2%;
 }
 
-#fea {
+#final h1.sectionheader, #you2 h1.sectionheader {
     padding-top: 2%;
+}
+
+#entrepreneurship h3 {
+    padding: 0 3%;
+}
+
+div.row.invite {
+    margin: 0;
+}
+
+panel-title {
+    font-size: 150%;
 }
 
 @media screen and (max-device-width: 992px) {
@@ -507,10 +491,6 @@ footer h3 {
         position: absolute;
         opacity: .5;
     }
-    #biglogo {
-        left: 5%;
-        position: relative;
-    }
     .h-right.col-sm-6 {
       padding-left: 20%;
       padding-bottom: 5%;
@@ -523,9 +503,6 @@ footer h3 {
 }
 
 @media screen and (max-device-width: 480px) {
-    #s-text > h2, #s-text > h3 {
-        font-size: 100%;
-    }
     #s-text {
       margin-bottom: 0%;
       margin-top: 0%;
@@ -533,5 +510,11 @@ footer h3 {
     .pit {
         padding-top: 0;
     }
-    
+    #menuToggle {
+        left: -15%;
+    }
+    .menu {
+        right: -80%;
+	   width: 80%;
+    }
 }
