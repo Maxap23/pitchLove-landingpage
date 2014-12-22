@@ -6250,17 +6250,7 @@ body.modal-open,
   padding: 10px 0 0;
   width: 91%;
 }
-#s-text {
-  margin-bottom: 30px;
-  margin-top: -106px;
-  text-align: center;
-}
-.h-right.col-md-6 {
-  margin-bottom: 20px;
-  padding-right: 61px;
-  padding-top: 15px;
-  text-align: right;
-}
+
 .bar {
   border-right: medium none;
   line-height: 6px;

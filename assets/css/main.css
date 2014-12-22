@@ -15,11 +15,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
     color: #333;
 }
+h2 {
+    font-size: 150%;
+}
 #h-top-bg {
   background: none repeat scroll 0 0 hsl(0, 0%, 100%);
 }
 #s-text > h2 {
-  font-size: 250%;
+  font-size: 213%;
 }
 .form-left {
  /* margin-left: 57px;*/
@@ -28,13 +31,23 @@ h1, h2, h3, h4, h5, h6 {
   color: hsl(173, 70%, 44%) !important;
 }
 #s-text > h3 {
-  font-size: 213%;
+  font-size: 153%;
 }
-.h-right.col-sm-6 {
-  padding-right: 5%;
-  padding-top: 3%;
+.h-right.col-sm-4 {
+  vertical-align: middle;
+    display: inline-block;
+    float: none;
   text-align: right;
+    padding: 3%;
 }
+
+.h-left.col-sm-8 {
+    vertical-align: middle;
+    display: inline-block;
+    float: none;
+  text-align: left;
+}
+
 #main-img {
   max-width: 688px;
   width: 100%;
@@ -56,20 +69,17 @@ footer {
 #ideas {
   padding: 3% 0 4%;
 }
-.bigger {
-  color: hsl(0, 0%, 100%);
-  font-size: 400%;
-}
 #protect h1.sectionheader, #about h1.sectionheader, #you2 h1.sectionheader, #final h1.sectionheader, #ideas h1.sectionheader, #poem h1.sectionheader, #entrepreneurship h1.sectionheader, #platform h1.sectionheader {
   font-size: 300%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
 .m-btn {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
   border-radius: 5px;
   color: hsl(0, 0%, 100%);
   padding: 2% 2.5%;
-    font-size: 150%;
+    font-size: 125%;
+    margin: 0 auto;
 }
 #top > img {
   margin: 0 auto;
@@ -82,7 +92,6 @@ footer {
   width: 100%;
 }
 #s-text {
-  margin-top: -12%;
   text-align: center;
 }
 
@@ -266,17 +275,15 @@ a:after {
 .int-bg {
   background: none repeat scroll 0 0 hsl(0, 0%, 96%);
 }
-.in-bg {
-  background: none repeat scroll 0 0 hsl(0, 0%, 100%);
-  padding: 2% 0;
-    width: 100%;
-}
+
 ent-bg{
     width: 100%;
 }
-.pit {
-  font-size: 425%;
-  padding-top: 3%;
+.pit, .bigger {
+  font-size: 250%;
+}
+.bigger {
+    color: #fff;
 }
 #main-cta img {
   max-width: 688px;
@@ -299,12 +306,9 @@ ent-bg{
   margin: 0;
   padding: 33px 0;
 }
-.btn.cta.btn-lg.m-btn {
-  padding: 8.7px 15px;
-}
 .ab-bg {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
-  padding: 2% 0;
+  padding: 3%;
 }
 .bar {
   border-right: 1px solid hsl(0, 0%, 100%);
@@ -324,15 +328,19 @@ ent-bg{
 }
 .unq{
 	padding-bottom:2%;}
-.plat-bg {
+.plat-bg, .headline {
   padding: 3%;
+}
+.plat-bg, .in-bg {
+    background: none repeat scroll 0 0 hsl(0, 0%, 100%);
+    width: 100%;
 }
 #entrepreneurship {
   background: none repeat scroll 0 0 hsl(0, 0%, 100%);
   padding: 2% 0;
 }
 .tgf {
-  padding-bottom: 2%;
+  padding: 3%;
 }
 .bgh {
   font-size: 213%;
@@ -461,12 +469,35 @@ panel-title {
     font-size: 150%;
 }
 
+.maincta, .footerinfo {
+    vertical-align: middle;
+    display: inline-block;
+    float: none;
+}
+
+h1.dark {
+    font-size: 200%;
+}
+
+h1.highlight {
+    font-size: 150%;
+}
+
+h3.dark {
+    font-size: 150%;
+}
+
+.final {
+    padding: 3%;
+}
+
+#reasonstabs {
+    border-radius: 5px;
+}
+
 @media screen and (max-device-width: 992px) {
     .nav > li > a {
         font-size: 110%;
-    }
-    #s-text > h2, #s-text > h3 {
-        font-size: 170%;
     }
 }
 
@@ -474,13 +505,6 @@ panel-title {
     .bar {
       border-right: none;
         border-left: none;
-    }
-    #s-text > h2, #s-text > h3 {
-        font-size: 120%;
-    }
-    #s-text {
-      margin-bottom: 0%;
-      margin-top: -17%;
     }
     .tgf img {
         margin: 0 auto;
@@ -500,21 +524,21 @@ panel-title {
     .nav > li > a {
         font-size: 92%;
     }
+    #s-text {
+        font-size: 80%;
+    }
 }
 
 @media screen and (max-device-width: 480px) {
-    #s-text {
-      margin-bottom: 0%;
-      margin-top: 0%;
-    }
-    .pit {
-        padding-top: 0;
-    }
     #menuToggle {
         left: -15%;
     }
     .menu {
         right: -80%;
 	   width: 80%;
+    }
+    .h-right.col-sm-4 {
+        text-align: center;
+        margin: 0 auto;
     }
 }
