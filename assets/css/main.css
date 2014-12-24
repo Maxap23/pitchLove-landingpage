@@ -506,6 +506,9 @@ h3.dark {
     padding-bottom: 3%;
 }
 
+#spa {
+    font-size: 250%;
+}
 
 @media screen and (max-device-width: 992px) {
     .nav > li > a {
