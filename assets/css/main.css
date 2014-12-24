@@ -294,6 +294,7 @@ ent-bg{
 #main-cta img {
   max-width: 688px;
   width: 100%;
+    padding: 1%;
 }
 .tab-content {
   padding: 2%;
@@ -307,10 +308,16 @@ ent-bg{
   border-top: 3px solid hsl(0, 0%, 87%);
   padding: 2% 0;
 }
+.wan.top {
+  font-size: 150%;
+  margin: 3%;
+  padding: 3%;
+    font-weight:600;
+}
 .wan {
-  font-size: 36px;
-  margin: 0;
-  padding: 33px 0;
+  font-size: 150%;
+    padding-bottom: 2%;
+    font-weight:600;
 }
 .ab-bg {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
@@ -511,6 +518,10 @@ h3.dark {
     font-size: 250%;
 }
 
+.icons {
+    margin: 0 auto;
+}
+
 @media screen and (max-device-width: 992px) {
     .nav > li > a {
         font-size: 110%;
@@ -521,6 +532,9 @@ h3.dark {
     }
     #bottom p {
         margin-top: 3%;
+    }
+    .edge {
+        margin-left: 0;
     }
 }
 
@@ -562,9 +576,6 @@ h3.dark {
     }
     .cta.m-btn {
         margin-top: 2%;
-    }
-    .edge {
-        margin-left: 0;
     }
 }
 
