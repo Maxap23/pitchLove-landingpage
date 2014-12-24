@@ -1,7 +1,7 @@
 
 body {
   background-color: #f2f2f2;
-   font-family: 'Exo', sans-serif;
+   font-family: 'Lato', sans-serif;
     font-weight: 300;
     font-size: 16px;
     color: #555;
@@ -78,8 +78,13 @@ footer {
   border-radius: 5px;
   color: hsl(0, 0%, 100%);
   padding: 3%;
-    font-size: 125%;
+    font-size: 100%;
     margin: 0 auto;
+}
+.cta.m-btn {
+    padding: 3%;
+    font-size: 125%;
+    margin-bottom: 2%;
 }
 #top > img {
   margin: 0 auto;
@@ -151,8 +156,8 @@ a:after {
 
 .menu {
 	position: fixed;
-	right: -25%;
-	width: 25%;
+	right: -30%;
+	width: 30%;
 	height: 100%;
 	top: 0;
 	z-index: 10;
@@ -473,6 +478,8 @@ panel-title {
     vertical-align: middle;
     display: inline-block;
     float: none;
+    text-align: center;
+    margin: 0 auto;
 }
 
 h1.dark {
@@ -504,6 +511,13 @@ h3.dark {
     .nav > li > a {
         font-size: 110%;
     }
+    .menu {
+        right: -45%;
+	   width: 45%;
+    }
+    #bottom p {
+        margin-top: 3%;
+    }
 }
 
 @media screen and (max-device-width: 768px) {
@@ -520,9 +534,8 @@ h3.dark {
         position: absolute;
         opacity: .5;
     }
-    .h-right.col-sm-6 {
-      padding-left: 20%;
-      padding-bottom: 5%;
+    .h-right.col-sm-4 {
+      padding: 3%;
         padding-top: 0;
       text-align: left;
     }
@@ -531,6 +544,23 @@ h3.dark {
     }
     #s-text {
         font-size: 80%;
+    }
+    .menu {
+        right: -65%;
+	   width: 65%;
+    }
+    .h-right.col-sm-4 {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .m-btn {
+        padding: 2%;
+    }
+    .cta.m-btn {
+        margin-top: 2%;
+    }
+    .edge {
+        margin-left: 0;
     }
 }
 
@@ -541,9 +571,5 @@ h3.dark {
     .menu {
         right: -85%;
 	   width: 85%;
-    }
-    .h-right.col-sm-4 {
-        text-align: center;
-        margin: 0 auto;
     }
 }
