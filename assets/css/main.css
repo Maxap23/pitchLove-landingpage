@@ -78,14 +78,15 @@ footer {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
   border-radius: 5px;
   color: hsl(0, 0%, 100%);
-  padding: 3%;
-    font-size: 100%;
+  padding: 5%;
+    font-size: 125%;
     margin: 0 auto;
 }
 .cta.m-btn {
-    padding: 3%;
+    padding: 5%;
     font-size: 125%;
     margin-bottom: 2%;
+    font-weight: bold;
 }
 #top > img {
   margin: 0 auto;
@@ -498,6 +499,10 @@ h1.highlight {
     font-size: 150%;
 }
 
+h1.highlight.pit {
+    font-size: 250%;
+}
+
 h3.dark {
     font-size: 150%;
 }
@@ -519,6 +524,62 @@ h3.dark {
 }
 
 .icons {
+    margin: 0 auto;
+}
+iframe.inspire {
+    margin-bottom: .5%;
+}
+
+#box {
+    position: relative;
+    background: #23bfae;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px; 
+    opacity: .8;
+    padding: .5%;
+}
+
+#box:after {
+    content: "";
+    position: absolute;
+    top: -25%;
+    left: 45%;
+    z-index: -3;
+    border: solid 15px transparent;
+    border-top-color: #23bfae;
+}
+
+#box:before {
+    content: "";
+    position: absolute;
+    bottom: -25%;
+    left: 45%;
+    z-index: -3;
+    border: solid 15px transparent;
+    border-bottom-color: #23bfae;
+}
+
+#contacts {
+    margin: 5%;
+}
+
+.control-group {
+    padding: 1%;
+}
+
+.formspace {
+    margin: 0 2%;
+}
+
+.form-control {
+    font-size: 175%;
+    height: auto;
+}
+
+.cta.m-btn.contactsubmit {
+    padding: 2% 5%;
+    font-weight: bold;
     margin: 0 auto;
 }
 
@@ -586,5 +647,11 @@ h3.dark {
     .menu {
         right: -85%;
 	   width: 85%;
+    }
+    #box:before {
+        display: none;
+    }
+    #box:after {
+        display: none;
     }
 }
