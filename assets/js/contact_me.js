@@ -1,5 +1,5 @@
 
-$(function() {
+$("#submitter").click(function() {
  
  $("input,textarea").jqBootstrapValidation(
     {
@@ -12,7 +12,6 @@ $(function() {
       event.preventDefault(); // prevent default submit haviour
        // get values from FORM
        var name = $("input#name").val();
-       var email = $("input#email").val();
          var ideaname = $("input#ideaname").val();
          var problem = $("input#problem").val();
          var needs = $("input#needs").val();
@@ -24,11 +23,11 @@ $(function() {
        firstName = name.split(' ').slice(0, -1).join(' ');
          }
      $.ajax({
-                url: "http://pitchlove.co/assets/inc/contact_me.php",
+                url: "./assets/inc/contact_me.php",
                 type: "POST",
-                data: {name: name, email: email, ideaname: ideaname, problem: problem, needs: needs, message: message},
+                data: {name: name, ideaname: ideaname, problem: problem, needs: needs, message: message},
                 cache: false,
-                success: function() {
+                success: function(data) {
                 // Success message
                    $('#success').html('<div class="alert alert-success">');
  $('#success > .alert-success').html('<button class="close" type="button" data-dismiss="alert">×')

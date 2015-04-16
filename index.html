@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/img/favicon.png">
 
-    <title>pitchLove | Turning Pitches into Insight + Profit</title>
+    <title>pitchLove | Making starting up a social game</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -78,27 +78,28 @@
                <div class="int-bg">
                 <div id="main-cta">
                     <div class="row text-center" >
-                        <div class="col-md-5 maincta">
-                            <h1 class="highlight pit"><strong><em>Are you the next tech mogul?<br>Need help with your idea?</em></strong></h1>
-                            <h2>Pitch your ideas to experts + investors to know what you need to get to the next level.</h2>
+                        <div class="col-md-6 maincta">
+                            <h1 class="highlight pit"><strong><em>Want customers for your startup?</br>We have the right steps to get customers + investors!</em></strong></h1>
+                            <h2>We make starting up a social game.</h2>
                             <div class="row invite" id="first-invite">
                                 <div class="col-md-12">
-                                    <h4 class="highlight text-center wan top">SIGN UP TO GET HELP</h4>
+                                    <h4 class="highlight text-center wan top">SIGN UP TO GET IN THE GAME!</h4>
                                 </div>
-                                 <div class="col-md-12 col-sm-12 subscribe form-left">
-                                    <form class="form-horizontal" role="form" name="subscribeForm" id="subscribeForm" action="http://us9.list-manage.com/subscribe/post" method="POST">
-                <input type="hidden" name="u" value="b600c45ad15be7a2768e4b48f">
-                <input type="hidden" name="id" value="c4543fa3e3">
+                                 <div class="col-md-12 col-sm-12 subscribe form-left" id="main-subscribe">
+                                    <form class="form-horizontal" role="form" name="interakt_lead" id="interakt_lead" action="" method="POST">
                                         <div class="form-group text-center">
                                             <div class="col-md-8 col-sm-8">
-                                                <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
+                                                <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="email" id="email" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
                                             </div>
                                             <div class="col-md-4 col-sm-4 submission">
-                                                <button type="submit" name="submit" class="btn cta btn-lg m-btn first">GET HELP</button>
+                                                <button type="submit" name="submit" class="btn cta btn-lg m-btn first" id="main-submit">GET HELP</button>
                                              </div>
                                          </div>
                                  </form>
-                            </div>
+                                     <div class="col-md-12 col-sm-12 alert-success" id="redirect">
+                                         <h3>Thanks for signing up! Let us know some more about your startup <a href="gethelp.html"><b>HERE</b></a>.</h3>   
+                                     </div>
+                                </div>
                             </div>
                         </div><!--
                      --><div class="col-md-6 col-md-ofset-1 maincta">
@@ -208,12 +209,10 @@
                     <h3 class="highlight text-center wan">SIGN UP TO GET HELP</h3>
                 </div>
                     <div class="col-md-12 col-sm-12 subscribe form-left">
-                        <form class="form-horizontal" role="form" name="subscribeForm" id="subscribeForm" action="http://us9.list-manage.com/subscribe/post" method="POST">
-    <input type="hidden" name="u" value="b600c45ad15be7a2768e4b48f">
-    <input type="hidden" name="id" value="c4543fa3e3">
+                        <form class="form-horizontal" role="form" name="interakt_lead" id="interakt_lead" action="" method="POST">
                             <div class="form-group text-center">
                                 <div class="col-md-5 col-sm-6 col-sm-offset-1 col-md-offset-2">
-                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
+                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="email" id="email" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
                                 </div>
                                 <div class="col-md-4 col-sm-4 submission">
                                     <button type="submit" name="submit" class="btn cta btn-lg m-btn">GET HELP</button>
@@ -228,7 +227,7 @@
             <div class="container" id="bottom">
                 <div class="col-md-3 col-xs-12 text-center footerinfo">
                     <div class="fb-like-box" data-href="https://www.facebook.com/pitchloveco" data-colorscheme="light" data-show-faces="false" data-header="true" data-stream="false" data-show-border="false"></div>
-                    <p>Copyright &copy; pitchLove 2014</p>
+                    <p>Copyright &copy; pitchLove 2015</p>
                 </div>
                 <div class="col-md-6 col-xs-12 text-center footerinfo">
                     <h3>For more information about pitchLove, email <a href="mailto:info@e2.is?Subject=Hello%20pitchLove">info@e2.is.</a></h3>
@@ -264,6 +263,14 @@
       fakewaffle.responsiveTabs(['xs', 'sm']);
   })(jQuery);
 </script>
+    
+    <script>
+        $('#main-submit').submit(function() {
+            $("#main-subscribe").hide();
+            $("#redirect").show();
+            console.log("It worked!");
+        });
+    </script>
     
     <script type="text/javascript">
     window.twttr = (function (d, s, id) {

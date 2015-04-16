@@ -3,20 +3,17 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 require ("PHPMailerAutoload.php");
- 
+ //var_dump($_POST);
 if(empty($_POST['name'])   ||    
-    empty($_POST['email'])  ||
     empty($_POST['ideaname'])  ||
     empty($_POST['problem'])  ||
     empty($_POST['needs'])  ||
-    empty($_POST['message'])||   
-    !filter_var($_POST['email'],FILTER_VALIDATE_EMAIL))    
+    empty($_POST['message']))    
   {     
        echo "No arguments Provided!";   return false;    
   } 
      
   $name = $_POST['name']; 
-  $email_address = $_POST['email']; 
     $ideaname = $_POST['ideaname'];
     $problem = $_POST['problem'];
     $needs = $_POST['needs'];
@@ -54,9 +51,8 @@ $to = 'maxime@e2.is';
  $email_subject = "Contact form submitted by:  $name"; 
 $email_body = "You have received a new message. \n\n".                 
                    " Here are the details:  <b>Name:</b> $name  ".                  
-                   "  <b>Email:</b> $email_address<br><br><b>Idea:</b> $ideaname <br> <b>Problem:</b> $problem <br> <b>Needs:</b> $needs <br> <b>Pitch:</b> $message"; 
- $headers = "From: gethelp@pitchlove.co\n"; 
- $headers .= "Reply-To: $email_address";     
+                   " <br><b>Idea:</b> $ideaname <br> <b>Problem:</b> $problem <br> <b>Needs:</b> $needs <br> <b>Pitch:</b> $message"; 
+ $headers = "From: gethelp@pitchlove.co\n";   
 
   $mail->Subject = $email_subject;
 	$mail->Body = $email_body;
@@ -64,5 +60,5 @@ $email_body = "You have received a new message. \n\n".
 
 	$statusSend = $mail->Send();
 
-return $statusSend;             
+echo $statusSend;             
 ?>

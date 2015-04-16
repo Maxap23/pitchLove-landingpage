@@ -533,7 +533,9 @@ h3.dark {
 iframe.inspire {
     margin-bottom: .5%;
 }
-
+#redirect {
+    display: none;
+}
 #box {
     position: relative;
     background: #23bfae;

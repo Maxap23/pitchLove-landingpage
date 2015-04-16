@@ -78,31 +78,26 @@
         <div class="row"><!-- Alignment -->
             <div class="col-sm-offset-1 col-sm-10">
                   <!-- Form itself -->
-                <form class="well" id="contactForm" name="sentMessage" novalidate=""><h1><strong>Pitch Your Idea</strong></h1>   <!-- Full Name -->
+                <form class="well" id="contactForm" name="sentMessage" novalidate="" ><h1><strong>Pitch Your Idea</strong></h1>   <!-- Full Name -->
                     <div class="row formspace"><div id="success"></div></div>
                     <div class="row formspace">
-                        <div class="control-group col-sm-4">
+                        <div class="control-group col-sm-6">
                             <div class="controls">
                                     <input class="form-control" id="name" type="text" placeholder="Full Name" required="" data-validation-required-message="Please enter your name" />
 
                             </div>
                         </div>
                             <!-- Email -->
-                        <div class="control-group col-sm-8">
-                            <div class="controls">
-                                    <input class="form-control" id="email" type="email" placeholder="Email" required="" data-validation-required-message="Please enter your email" />
-                            </div>
-                        </div>
-                    </div>
-                     <div class="row formspace">
-                        <div class="control-group col-sm-4">
+                        <div class="control-group col-sm-6">
                             <div class="controls">
                                     <input class="form-control" id="ideaname" type="text" placeholder="Idea/Startup Name" required="" data-validation-required-message="Please the name of your idea/startup" />
 
                             </div>
                         </div>
+                    </div>
+                     <div class="row formspace">
                             <!-- Problem -->
-                        <div class="control-group col-sm-8">
+                        <div class="control-group col-sm-12">
                             <div class="controls">
                                     <input class="form-control" id="problem" type="problem" placeholder="What problem are you solving?" required="" data-validation-required-message="Please enter the problem you're solving with your idea/startup" />
                             </div>
@@ -127,7 +122,7 @@
                         </div>
                     </div>
                  <!-- For success/fail messages -->
-                    <div class="row formspace"><button class="btn cta m-btn btn-lg contactsubmit pull-right" type="submit">Send</button></div>
+                    <div class="row formspace"><button class="btn cta m-btn btn-lg contactsubmit pull-right" type="submit" id="submitter">Send</button></div>
 
                 </form>
             </div>
