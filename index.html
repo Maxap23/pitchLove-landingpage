@@ -16,6 +16,8 @@
     <link href="assets/css/main.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/morphext.css">
+      <link rel="stylesheet" href="assets/css/animate.css">
       
       <script src="//load.sumome.com/" data-sumo-site-id="3d313d59fbf23c24a5c10d5f9b600de4ad97fa0fd28907fcf54f936b16a2ab64" async></script>
 	
@@ -47,8 +49,7 @@
     	<div class="h-left col-sm-7 col-xs-12">
         	<div id="llogo"><a href="#"><img src="assets/img/pitchlove_350x75.png" alt="Logo" /></a></div>
         </div><!--end h-left 
-        --><div class="h-right col-sm-4 col-xs-12 "><a href="http://www.paywithatweet.com/pay?id=ca7b84bf-9f7c-43c2-905c-fa55d2907dde" class="m-btn btn-lg first"><strong>Get Help</strong></a></div><!--end h-right -->
-        <a class="twitter-follow-button" href="https://twitter.com/pitchLoveCo" data-show-count="false" data-lang="en">Follow @pitchLoveCo</a>
+        --><!--<div class="h-right col-sm-4 col-xs-12 "><a href="http://www.paywithatweet.com/pay?id=ca7b84bf-9f7c-43c2-905c-fa55d2907dde" class="m-btn btn-lg first"><strong>Get Help</strong></a></div><!--end h-right --><div class="col-sm-5 col-xs-12 col-sm-offset-1"><a class="twitter-follow-button" href="https://twitter.com/pitchLoveCo" data-show-count="false" data-lang="en">Follow @pitchLoveCo</a></div>
     <!-- Navigation -->
 	<!-- Menu -->
 	<nav class="menu" id="theMenu">
@@ -57,7 +58,6 @@
 			<i class="icon-remove menu-close"></i>
             <a href="#" class="smoothScroll">Home</a>
 			<a href="#about" class="smoothScroll">&nbsp;&nbsp;About</a>
-			<a href="#platform" class="smoothScroll">&nbsp;&nbsp;Our Platform</a>
             <a href="inspiration.html" class="smoothScroll">Inspiration</a>
             <a href="inspiration.html#poem" class="smoothScroll">&nbsp;&nbsp;Poem</a>
 			<a href="inspiration.html#protect" class="smoothScroll">&nbsp;&nbsp;Idea Protection</a>
@@ -79,27 +79,30 @@
                 <div id="main-cta">
                     <div class="row text-center" >
                         <div class="col-md-6 maincta">
-                            <h1 class="highlight pit"><strong><em>Want customers for your startup?</br>We have the right steps to get customers + investors!</em></strong></h1>
-                            <h2>We make starting up a social game.</h2>
+                            <div class="row">
+                                <div class="col-sm-10 col-sm-offset-1">
+                                    <h1 class="highlight pit"><strong><em>Want feedback for your pitch from <span id="js-rotating">Customers, Industry Experts, Investors</span> ?</em></strong></h1>
+                                    <h2>Create a video pitch to get excellent feedback and data reports to improve your startup + pitch.</h2>
+                                </div>
+                            </div>
                             <div class="row invite" id="first-invite">
                                 <div class="col-md-12">
-                                    <h4 class="highlight text-center wan top">SIGN UP TO GET IN THE GAME!</h4>
+                                    <h4 class="highlight text-center wan top">SIGN UP TO TRY pitchLove FOR FREE!</h4>
                                 </div>
                                  <div class="col-md-12 col-sm-12 subscribe form-left" id="main-subscribe">
-                                    <form class="form-horizontal" role="form" name="interakt_lead" id="interakt_lead" action="" method="POST">
+                                    <form class="form-horizontal" role="form" name="interakt_lead" id="interakt_lead" action="gethelp.html" method="POST">
                                         <div class="form-group text-center">
                                             <div class="col-md-8 col-sm-8">
                                                 <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="email" id="email" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
                                             </div>
                                             <div class="col-md-4 col-sm-4 submission">
-                                                <button type="submit" name="submit" class="btn cta btn-lg m-btn first" id="main-submit">GET HELP</button>
+                                                <button type="submit" name="submit" class="btn cta btn-lg m-btn first" id="main-submit">LET'S PITCH</button>
                                              </div>
                                          </div>
                                  </form>
-                                     <div class="col-md-12 col-sm-12 alert-success" id="redirect">
-                                         <h3>Thanks for signing up! Let us know some more about your startup <a href="gethelp.html"><b>HERE</b></a>.</h3>   
-                                     </div>
                                 </div>
+                                 <div class="col-md-12 col-sm-12 alert-success" id="redirect">  
+                                 </div>
                             </div>
                         </div><!--
                      --><div class="col-md-6 col-md-ofset-1 maincta">
@@ -109,7 +112,7 @@
                     </div>
                     <div class="row">
                         <div id="s-text">
-                           <h2>Make your <span><strong class="highlight">IDEA</strong></span> a reality <span><strong class="highlight">TODAY</strong></span>!</h2>
+                           <h2>Pitch your startup <span><strong class="highlight">IDEA</strong></span> and get <span><strong class="highlight">FEEDBACK</strong></span>!</h2>
                         </div>
                     </div>
                   </div>
@@ -132,32 +135,38 @@
             </div>
         <div class="row text-center">
             <div class="col-sm-8 col-sm-offset-2">
-                <h2 class="whit">We help anyone that wants to create something great. It can be an invention, an app, a product, business idea, or anything at all. We make it easier and lower the risk to make anyone's ideas a reality.</h2>
+                <h2 class="whit">Using the pitchLove platform, you can get excellent pitch feedback from investors, industry experts, and customers. We also allow you to connect with feedback providers and offer data reports to help you improve your startup and pitch.</h2>
+                <h4><strong class="whit">We provide:</strong></h4>
             </div>
         </div>
         <div class="text-center space">
             <div class="row" id="fea">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <img src="assets/img/1.png" alt="1">
-                    <h3 class="whit"><strong>CREATE A PITCH</strong></h3>
-                    <h4 class="whit">Have a great idea? Want to know if it’s ready for the marketplace? pitchLove provides the tools and resources to put your idea in front of your future customers, mentors, and investors.</h4>
+                    <h3 class="whit"><strong>PITCH</strong></h3>
+                    <h4 class="whit">We have a simple video pitch platform that creates interactive pitches that are sharable across the web.</h4>
                 </div>
-                <div class="col-sm-4 bar">
+                <div class="col-sm-3 bar">
                     <img src="assets/img/2.png" alt="2">
-                    <h3 class="whit"><strong>GET FEEDBACK</strong></h3>
-                    <h4 class="whit">Our platform evaluates customer interest by garnering feedback from a dedicated community. pitchLove’s insightful community determines whether your initial idea is market-ready, requires additional refinement, or should be scrapped.</h4>
+                    <h3 class="whit"><strong>FEEDBACK</strong></h3>
+                    <h4 class="whit">We can help you to get feedback from proven experts and interested customers to help you constantly improve.</h4>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3 bar">
                     <img src="assets/img/3.png" alt="3">
-                    <h3 class="whit"><strong>BUILD A GREAT BUSINESS</strong></h3>
-                    <h4 class="whit">Our process saves you time, money and heartache from the beginning. pitchLove maximizes the potential of your idea by investing in its marketability with the creation of a viable and sustainable business.</h4>
+                    <h3 class="whit"><strong>INSIGHT</strong></h3>
+                    <h4 class="whit">We can provide insight and recommendations to improve with a proprietary algorithm and data reports.</h4>
+                </div>
+                <div class="col-sm-3">
+                    <img src="assets/img/4.png" alt="4">
+                    <h3 class="whit"><strong>COMMUNITY</strong></h3>
+                    <h4 class="whit">We have a strong community of founders, experts, investors, everyone you need to make your business a success.</h4>
                 </div>
             </div>
         </div>
     </div>
     </section>
     
-    <section id="platform" class="plat-bg">
+    <!--<section id="platform" class="plat-bg">
         <div class="container">
             <div class="row">
                 <h1 class="sectionheader text-center">Our Platform</h1>
@@ -196,31 +205,17 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-10 col-md-offset-1">
-                <h1 class="highlight text-center" id="spa">Need more &nbsp;<a id="box" href="inspiration.html"><strong> INSPIRATION </strong></a>&nbsp; ?</h1>
-                </div>
-                <div class="col-md-1"></div>
+                
             </div>
         </div>
-    </section>
+    </section>-->
     
     <div class="row invite in-bg">
-                <div class="col-md-12">
-                    <h3 class="highlight text-center wan">SIGN UP TO GET HELP</h3>
-                </div>
-                    <div class="col-md-12 col-sm-12 subscribe form-left">
-                        <form class="form-horizontal" role="form" name="interakt_lead" id="interakt_lead" action="" method="POST">
-                            <div class="form-group text-center">
-                                <div class="col-md-5 col-sm-6 col-sm-offset-1 col-md-offset-2">
-                                    <input type="email" class="form-control input-lg" autocapitalize="off" autocorrect="off" name="email" id="email" size="25" placeholder="Enter your email" data-validate="validate(required, email)" required value="">
-                                </div>
-                                <div class="col-md-4 col-sm-4 submission">
-                                    <button type="submit" name="submit" class="btn cta btn-lg m-btn">GET HELP</button>
-                                 </div>
-                             </div>
-                     </form>
-				</div>
-        </div> 
+        <div class="col-md-10 col-md-offset-1">
+        <h1 class="highlight text-center" id="spa">Need more &nbsp;<a id="box" href="inspiration.html"><strong> INSPIRATION </strong></a>&nbsp; ?</h1>
+        </div>
+        <div class="col-md-1"></div>
+    </div> 
 
         <!-- Footer -->
         <footer>
@@ -252,6 +247,7 @@
     <script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/Chart.js"></script>
 	<script src="assets/js/modernizr.js"></script>
+    <script src="assets/js/morphext.min.js"></script>
 
 <script type="text/javascript">
     $( '#reasonstabs a' ).click( function ( e ) {
@@ -265,11 +261,32 @@
 </script>
     
     <script>
-        $('#main-submit').submit(function() {
-            $("#main-subscribe").hide();
-            $("#redirect").show();
-            console.log("It worked!");
+        $("#js-rotating").Morphext({
+            // The [in] animation type. Refer to Animate.css for a list of available animations.
+            animation: "flipInX",
+            // An array of phrases to rotate are created based on this separator. Change it if you wish to separate the phrases differently (e.g. So Simple | Very Doge | Much Wow | Such Cool).
+            separator: ",",
+            // The delay between the changing of each phrase in milliseconds.
+            speed: 2000,
+            complete: function () {
+                // Called after the entrance animation is executed.
+            }
         });
+    </script>
+    
+    <script>
+        $('#main-subscribe').submit(function() {
+             $.ajax({
+                 type: "POST",
+                  url: "gethelp.html",
+                  data: $(this).serialize(),
+                  success: function() {
+                    $("#main-subscribe").hide();
+                    $("#redirect").html('<h3>Thanks for signing up! Let us know some more about your startup <a href="gethelp.html"><b>HERE</b></a>.</h3> ');
+                    console.log("It worked!");
+                   }
+                })
+            });
     </script>
     
     <script type="text/javascript">

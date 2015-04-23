@@ -33,7 +33,7 @@ $("#submitter").click(function() {
  $('#success > .alert-success').html('<button class="close" type="button" data-dismiss="alert">×')
  .append( "</button>");
  $('#success > .alert-success')
- .append("<strong>Your message has been sent. You will soon receive an email with the next steps.</strong>");
+ .append('<strong>Your message has been sent. You will soon receive an email with the next steps. We look forward to helping you build your startup into the next big thing!</strong> <br> <p>Email us at <a href="mailto:info@e2.is?Subject=pitchLove%20Question">info@e2.is</a>.</p>');
  $('#success > .alert-success')
  .append('</div>');
  

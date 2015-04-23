@@ -326,7 +326,10 @@ ent-bg{
 }
 .ab-bg {
   background: none repeat scroll 0 0 hsl(173, 69%, 44%);
-  padding: 3%;
+  padding: 1%;
+}
+#js-rotating {
+    font-weight: 100;   
 }
 .bar {
   border-right: 1px solid hsl(0, 0%, 100%);
@@ -347,7 +350,7 @@ ent-bg{
 .unq{
 	padding-bottom:2%;}
 .plat-bg, .headline {
-  padding: 3%;
+  padding: 1%;
 }
 .plat-bg, .in-bg {
     background: none repeat scroll 0 0 hsl(0, 0%, 100%);
@@ -481,6 +484,7 @@ footer h3 {
 
 div.row.invite {
     margin: 0;
+    padding: 3%;
 }
 
 panel-title {
@@ -532,9 +536,6 @@ h3.dark {
 }
 iframe.inspire {
     margin-bottom: .5%;
-}
-#redirect {
-    display: none;
 }
 #box {
     position: relative;
